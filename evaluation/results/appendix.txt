@@ -1,0 +1,720 @@
+
+================================================================================
+APPENDIX A — SAMPLE TEST QUERIES, EXPECTED AND GENERATED ANSWERS
+================================================================================
+
+Generated directly from evaluation/results/eval_results.json so that what
+appears here is exactly what the system produced. Answers are reproduced in full
+and unedited.
+
+================================================================================
+CASE RTI-01   [in_scope]   language: en
+================================================================================
+
+QUESTION
+    How do I file an RTI application and how long does the Public Information
+    Officer have to reply?
+
+EXPECTED (reference answer from the labelled set)
+    Legal domain  : rti
+    Source Act(s) : rti_act_2005_en.pdf
+    Section(s)    : 6, 7
+    Must mention  : Public Information Officer, thirty days
+
+GENERATED ANSWER
+    To file an RTI application, a person must make a request in writing or
+    through electronic means in English or Hindi or in the official language of
+    the area in which the application is being made, accompanying such fee as
+    may be prescribed, to the Central Public Information Officer or State Public
+    Information Officer, as the case may be, of the concerned public authority.
+    (The Right to Information Act, 2005, Section 6)
+
+    The Public Information Officer, as the case may be, on receipt of a request
+    under Section 6, shall, as expeditiously as possible, and in any case within
+    thirty days of the receipt of the request, either provide the information on
+    payment of such fee as may be prescribed or reject the request for any of
+    the reasons specified in Sections 8 and 9. (The Right to Information Act,
+    2005, Section 7)
+
+    Therefore, the Public Information Officer has to reply within thirty days of
+    the receipt of the request. If the Public Information Officer is unable to
+    provide the information within this period, they must reject the request and
+    provide a reason for the rejection, as specified in Sections 8 and 9 of the
+    RTI Act, 2005.
+
+RETRIEVAL
+    Classified as         : rti  (expected: rti)
+    Top similarity        : 0.6128
+    Filter applied        : rti
+    Fell back to full KB  : False
+    Chunks used           : 5
+    Abstained             : False
+    Expected Act retrieved: True
+    Expected section found: True
+    Precision@5           : 0.6
+
+VERIFICATION
+    Grounded (no invented sections): True
+    Reference keywords found      : 2/2  (Public Information Officer, thirty
+    days)
+    Answered in the right language: True
+
+EVIDENCE — RETRIEVED CHUNKS (top 3 of 5 passed to the model)
+
+  [1] score 0.6128  |  सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)
+      Section 30  page 10  |  file: rti_act_2005_hi.pdf
+      क अधिनियमन के सौ दिन क भीतर किसी अधिकारी को प्रत्येक उपमंडल स्तर या अन्य
+      उप जिला स्तर पर यथास्थिति केंद्रीय सहायक लोक सूचना अधिकारी या किसी राज्य
+      सहायक लोक सूचना अधिकारी के रूप में इस अधिनियम के अधीन सूचना के लिए आवेदन
+      या अपील प्राप्त करने और उसे तत्काल यथास्थिति कंद्रीय लोक सूचना अधिकारी या
+      राज्य ल
+
+  [2] score 0.6103  |  The Right to Information Act, 2005
+      Section 5  page 10  |  file: rti_act_2005_en.pdf
+      Officer, as the case may be, to receive the applications for infbrmation
+      or appeals under this Act for forwarding the same forthwith to the Central
+      Public Information Officer or the State Public Information Officer or
+      senior officer specified under sub-section (/) of section 19 or the
+      Central Inform
+
+  [3] score 0.6084  |  The Right to Information Act, 2005
+      Section 7  page 10  |  file: rti_act_2005_en.pdf
+      7. Disposal of request.—(/) Subject to the proviso to sub-section (2) of
+      section 5 or the proviso to sub-section (3) of section 6, the Central
+      Public Information Officer or State Public Information Officer, as the
+      case may be, on receipt of a request under section 6 shall, as
+      expeditiously as possib
+
+================================================================================
+CASE TEN-01   [in_scope]   language: en
+================================================================================
+
+QUESTION
+    My landlord is refusing to return my security deposit after I vacated the
+    flat. What does the law say?
+
+EXPECTED (reference answer from the labelled set)
+    Legal domain  : tenancy
+    Source Act(s) : model_tenancy_act_2021.pdf, mh_rent_control_1999.pdf
+    Section(s)    : 11
+    Must mention  : security deposit
+
+GENERATED ANSWER
+    The law regarding the return of a security deposit after vacating the
+    premises can be found in Section 11 of the Model Tenancy Act, 2021.
+    According to this section, the security deposit to be paid by the tenant in
+    advance shall not exceed two months' rent for residential premises and six
+    months' rent for non-residential premises. Additionally, Section 11 of the
+    Model Tenancy Act, 2021, states that the security deposit shall be refunded
+    to the tenant on the date of taking over vacant possession of the premises
+    from the tenant, after making due deduction of any liability of the tenant.
+
+    If the landlord is refusing to return the security deposit, you should first
+    ensure that the premises have been vacated and that the landlord has not
+    made any deductions from the deposit as per the provisions of the Model
+    Tenancy Act, 2021. If the landlord has not made the required deductions and
+    is still refusing to return the deposit, you should contact the local
+    Consumer Disputes Redressal Forum or a local legal aid clinic for further
+    assistance. They can provide guidance on how to proceed with the matter,
+    including filing a complaint or seeking a legal opinion.
+
+RETRIEVAL
+    Classified as         : tenancy  (expected: tenancy)
+    Top similarity        : 0.6566
+    Filter applied        : tenancy
+    Fell back to full KB  : False
+    Chunks used           : 5
+    Abstained             : False
+    Expected Act retrieved: True
+    Expected section found: True
+    Precision@5           : 1.0
+
+VERIFICATION
+    Grounded (no invented sections): True
+    Reference keywords found      : 1/1  (security deposit)
+    Answered in the right language: True
+
+EVIDENCE — RETRIEVED CHUNKS (top 3 of 5 passed to the model)
+
+  [1] score 0.6566  |  The Model Tenancy Act, 2021
+      Section 11  page 8  |  file: model_tenancy_act_2021.pdf
+      11. (1) The security deposit to b e paid by the tenant in advance shall be
+      such as may be agreed upon between the landlord and the tenant in the
+      tenancy agreement, which shall –– Restriction on sub-letting. Rent
+      payable. Revision of rent. Rent Authority to determine the revised rent in
+      case of dispu
+
+  [2] score 0.6224  |  The Model Tenancy Act, 2021
+      Section 15  page 10  |  file: model_tenancy_act_2021.pdf
+      inhabitable: Provided that where the rented premises becomes uninhabitable
+      as specified in sub-section (5) or this sub-section and the landlord
+      Repair and maintenance of property. WWW.LIVELAW.IN fails to carry out the
+      required repairs to make it inhabitable or the said premises could not be
+      made inh
+
+  [3] score 0.6193  |  The Maharashtra Rent Control Act, 1999
+      Section 11  page 19  |  file: mh_rent_control_1999.pdf
+      with the vouchers maintained by the tenants shall be conclusive evidence
+      of such expenditure and shall be binding on the landlord. CHAPTER III
+      RELIEF AGAINST FORFEITURE 15. (1) A_ landlord shall not be entitled to the
+      recovery of No ejectment possession of any premises SO long as the tenant
+      pays, or
+
+================================================================================
+CASE CON-01   [in_scope]   language: en
+================================================================================
+
+QUESTION
+    I bought a defective washing machine online and the seller refuses to refund
+    me. Where can I file a complaint?
+
+EXPECTED (reference answer from the labelled set)
+    Legal domain  : consumer
+    Source Act(s) : cpa_2019.pdf
+    Section(s)    : 35, 34
+    Must mention  : District Commission
+
+GENERATED ANSWER
+    You can file a complaint with the District Collector or the Commissioner of
+    the regional office, as these are the authorities mentioned in the Consumer
+    Protection Act, 2019, under Section 17.
+
+    Additionally, you can also file a complaint with the Central Authority, as
+    mentioned in the same section. This will allow you to forward your complaint
+    relating to the violation of consumer rights or unfair trade practices,
+    which is prejudicial to your interests as a consumer.
+
+    Furthermore, you can seek assistance from a recognized consumer association,
+    such as the one you mentioned, to file your complaint. If you are a member
+    of such an association, you can file the complaint on your behalf or on
+    behalf of the consumer who is a member of the association.
+
+    If you have already tried to resolve the issue through mediation, you can
+    file a complaint with the State Commission or the National Commission, as
+    the case may be, under Section 82 of the Consumer Protection Act, 2019, to
+    continue hearing all the issues involved in the consumer dispute related to
+    the defective washing machine.
+
+RETRIEVAL
+    Classified as         : consumer  (expected: consumer)
+    Top similarity        : 0.5677
+    Filter applied        : consumer
+    Fell back to full KB  : False
+    Chunks used           : 5
+    Abstained             : False
+    Expected Act retrieved: True
+    Expected section found: True
+    Precision@5           : 1.0
+
+VERIFICATION
+    Grounded (no invented sections): False
+    UNSUPPORTED citations         : 82
+    Reference keywords found      : 0/1
+    Answered in the right language: True
+
+EVIDENCE — RETRIEVED CHUNKS (top 3 of 5 passed to the model)
+
+  [1] score 0.5677  |  The Consumer Protection Act, 2019
+      Section 17  page 13  |  file: cpa_2019.pdf
+      17. A complaint relating to violation of consumer rights or unfair trade
+      practices or false or misleading advertisements which are prejudicial to
+      the interests of consumers as a class, may be forwarded either in writing
+      or in electronic mode, to any one of the authorities, namely, the District
+      Colle
+
+  [2] score 0.5554  |  The Consumer Protection Act, 2019
+      Section 81  page 31  |  file: cpa_2019.pdf
+      or the State Commission or the National Commission, as the case may be,
+      shall continue to hear all the issues involved in such consumer dispute.
+      CHAPTER VI PRODUCT LIABILITY 82. This Chapter shall apply to every claim
+      for compensation under a product liability action by a complainant for any
+      harm ca
+
+  [3] score 0.5474  |  The Consumer Protection Act, 2019
+      Section 35  page 18  |  file: cpa_2019.pdf
+      35. (1) A complaint, in relation to any goods sold or delivered or agreed
+      to be sold or delivered or any service provided or agreed to be provided,
+      may be filed with a District Commission by— (a) the consumer,— (i) to whom
+      such goods are sold or delivered or agreed to be sold or delivered or such
+      se
+
+================================================================================
+CASE FAM-04   [in_scope]   language: en
+================================================================================
+
+QUESTION
+    My husband's family is harassing me at home. What protection can I get under
+    the domestic violence law?
+
+EXPECTED (reference answer from the labelled set)
+    Legal domain  : family
+    Source Act(s) : dv_act_2005.pdf
+    Section(s)    : 12, 18, 19
+    Must mention  : protection order
+
+GENERATED ANSWER
+    Under the Protection of Women from Domestic Violence Act, 2005, you can seek
+    protection and relief from your husband's family's harassment. Here are the
+    steps you can take:
+
+    First, you should report the harassment to a Protection Officer. You can do
+    this by presenting an application to the Magistrate seeking one or more
+    reliefs under this Act. Before the Magistrate passes any order, you should
+    take into consideration any domestic incident report received by him from
+    the Protection Officer or the service provider. You can contact a Protection
+    Officer who will ensure that you are medically examined and forward a copy
+    of the medical report to the police station and the Magistrate having
+    jurisdiction in the area where the domestic violence is alleged to have
+    taken place (Section 12 of the Act).
+
+    Additionally, you can seek a protection order from the Magistrate. The
+    Magistrate may pass a protection order in favor of the aggrieved person
+    prohibiting the respondent from committing any act of domestic violence,
+    aiding or abetting in the commission of acts of domestic violence, entering
+    the place of employment of the aggrieved person, or attempting to
+    communicate with the aggrieved person (Section 18 of the Act).
+
+    Furthermore, you can seek the help of a service provider. The service
+    provider can ensure that you are provided with shelter in a shelter home if
+    you require it and forward a report of the lodging of the aggrieved person
+    in the shelter home to the police station within the local limits of which
+    the domestic violence took place (Section 10 of the Act).
+
+    Lastly, you can seek legal aid from a lawyer or a local legal aid clinic if
+    you need further assistance or if you believe that your rights under the Act
+    have been violated. It is important to consult with a legal expert to
+    understand your rights and the steps you can take to protect yourself from
+    further harassment (Section 9 of the Act).
+
+    Remember, you have the right to seek protection and relief under the
+    Protection of Women from Domestic Violence Act, 2005. It is advisable to
+    consult a lawyer or a local legal aid clinic for further guidance and
+    support.
+
+RETRIEVAL
+    Classified as         : family  (expected: family)
+    Top similarity        : 0.6192
+    Filter applied        : family
+    Fell back to full KB  : False
+    Chunks used           : 5
+    Abstained             : False
+    Expected Act retrieved: True
+    Expected section found: True
+    Precision@5           : 1.0
+
+VERIFICATION
+    Grounded (no invented sections): False
+    UNSUPPORTED citations         : 12
+    Reference keywords found      : 1/1  (protection order)
+    Answered in the right language: True
+
+EVIDENCE — RETRIEVED CHUNKS (top 3 of 5 passed to the model)
+
+  [1] score 0.6192  |  The Protection of Women from Domestic Violence Act, 2005
+      Section 1  page 4  |  file: dv_act_2005.pdf
+      to the joint family of which the respondent is a member, irrespective of
+      whether the respondent or the aggrieved person has any right, title or
+      interest in the shared household; (t) “shelter home” means any shelter
+      home as may be notified by the St ate Government to be as helter home for
+      the purpose
+
+  [2] score 0.6105  |  The Protection of Women from Domestic Violence Act, 2005
+      Section 11  page 7  |  file: dv_act_2005.pdf
+      with law, home affairs including law and order, health and human resources
+      to address issues of domestic violence is established and periodical
+      review of the same is conducted; (d) protocols f or the various Ministries
+      concerned with the delivery of services to women under this Act including
+      the cou
+
+  [3] score 0.6066  |  The Protection of Women from Domestic Violence Act, 2005
+      Section 18  page 8  |  file: dv_act_2005.pdf
+      18. Protection orders. —The Magistrate may, after giving the aggrieved
+      person and the respondent an opportunity of being heard and on being prima
+      facie satisfied that domestic violence has taken place or is likely to
+      take place, pass a protection o rder in favo ur of the aggrieved person a
+      nd prohib
+
+================================================================================
+CASE CRI-01   [in_scope]   language: en
+================================================================================
+
+QUESTION
+    The police are refusing to register my FIR. What are my legal options?
+
+EXPECTED (reference answer from the labelled set)
+    Legal domain  : criminal
+    Source Act(s) : bnss_2023.pdf
+    Section(s)    : 173, 175
+    Must mention  : Magistrate
+
+GENERATED ANSWER
+    The police are refusing to register your FIR. Your legal options, based on
+    the Bharatiya Nagarik Suraksha Sanhita, 2023, are as follows:
+
+    1. **Right to Information**: You have the right to send the substance of
+    your information, in writing and by post, to the Superintendent of Police
+    concerned. If the Superintendent is satisfied that your information
+    discloses the commission of a cognizable offence, they may either
+    investigate the case themselves or direct an investigation to be made by any
+    police officer subordinate to them (Section 172, The Bharatiya Nagarik
+    Suraksha Sanhita, 2023).
+
+    2. **Legal Action Against the Refusal**: If the Superintendent does not
+    register your FIR, you can send this information to the Superintendent of
+    Police. If the Superintendent is satisfied that your information discloses
+    the commission of a cognizable offence, they may investigate the case. If
+    they do not, you can then file a complaint with the Magistrate, alleging
+    that the police have refused to register your FIR in contravention of the
+    Bharatiya Nagarik Suraksha Sanhita, 2023 (Section 172, The Bharatiya Nagarik
+    Suraksha Sanhita, 2023).
+
+    3. **Legal Representation**: Consulting a lawyer or a local legal aid clinic
+    can provide you with guidance on the best course of action and help you
+    navigate the legal process effectively. They can also represent you in any
+    legal proceedings that may arise.
+
+    4. **Documentation**: Keep all communications and documents related to your
+    complaint and the refusal to register your FIR. This documentation can be
+    crucial in any legal proceedings.
+
+    5. **Community Support**: Informing your community and seeking support from
+    them can also be beneficial, as they may be able to provide additional
+    support or witness statements that could strengthen your case.
+
+    It is advisable to consult a lawyer or a local legal aid clinic to
+    understand your specific situation and to receive personalized legal advice.
+
+RETRIEVAL
+    Classified as         : criminal  (expected: criminal)
+    Top similarity        : 0.5588
+    Filter applied        : criminal
+    Fell back to full KB  : False
+    Chunks used           : 5
+    Abstained             : False
+    Expected Act retrieved: True
+    Expected section found: False
+    Precision@5           : 1.0
+
+VERIFICATION
+    Grounded (no invented sections): True
+    Reference keywords found      : 1/1  (Magistrate)
+    Answered in the right language: True
+
+EVIDENCE — RETRIEVED CHUNKS (top 3 of 5 passed to the model)
+
+  [1] score 0.5588  |  The Bharatiya Nagarik Suraksha Sanhita, 2023
+      Section 172  page 53  |  file: bnss_2023.pdf
+      of the offence,— (i) proceed to conduct preliminary enquiry to ascertain
+      whether there exists a prima facie case for proceeding in the matter
+      within a period of fourteen days; or (ii) proceed with investigation when
+      there exists a prima facie case. (4) Any person aggrieved by a refusal on
+      the part o
+
+  [2] score 0.553  |  The Bharatiya Nagarik Suraksha Sanhita, 2023
+      Section 531  page 190  |  file: bnss_2023.pdf
+      Police Station……… To, ................................. [Name of the
+      Accused/Noticee] ................................. [Last known Address]
+      ................................. [Phone No./Email ID (if any)] In
+      pursuance of sub-section ( 3) of section 35 of the Bharatiya Nagarik
+      Suraksha Sanhita, 2023,
+
+  [3] score 0.5473  |  The Bharatiya Nagarik Suraksha Sanhita, 2023
+      Section 39  page 15  |  file: bnss_2023.pdf
+      39. (1) When any person who, in the presence of a police officer, has
+      committed or has been accused of committing a non-cognizable offence
+      refuses on demand of such officer to give his name and residence or gives
+      a name or residence which such officer has reason to believe to be false,
+      he may be arr
+
+================================================================================
+CASE RTI-05   [in_scope]   language: mr
+================================================================================
+
+QUESTION
+    RTI अर्ज कसा दाखल करायचा आणि किती दिवसांत उत्तर मिळते?
+
+EXPECTED (reference answer from the labelled set)
+    Legal domain  : rti
+    Source Act(s) : rti_act_2005_en.pdf, rti_act_2005_hi.pdf
+    Section(s)    : 6, 7
+
+GENERATED ANSWER
+    RTI अर्ज कसा दाखल करायचा आणि किती दिवसांत उत्तर मिळते?
+
+    RTI अधिनियम, 2005 (सूचना का अधिकार अधिनियम, 2005) या अधिनियमाचा सूचना तक
+    पहुंच उपलब्ध कराना आणि अपील या अधिनियमाचा अधीन उपाय देना आहे. त्याचा अधिकारी
+    आणि उपाय देने पर्यंत तीनावी दिवसांत उत्तर मिळेल. त्यांनी त्यांचा अधिकार आणि
+    उपाय देत आणि त्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे. त्यांनी
+    त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे असे तीनावी दिवसांत उत्तर मिळेल.
+    त्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे असे तीनावी दिवसांत
+    उत्तर मिळेल. त्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे असे तीनावी
+    दिवसांत उत्तर मिळेल.
+
+    त्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे असे तीनावी दिवसांत
+    उत्तर मिळेल. त्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे असे तीनावी
+    दिवसांत उत्तर मिळेल. त्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे
+    असे ती
+
+RETRIEVAL
+    Classified as         : rti  (expected: rti)
+    Top similarity        : 0.5946
+    Filter applied        : rti
+    Fell back to full KB  : False
+    Chunks used           : 5
+    Abstained             : False
+    Expected Act retrieved: True
+    Expected section found: True
+    Precision@5           : 1.0
+
+VERIFICATION
+    Grounded (no invented sections): True
+    Reference keywords found      : 0/0
+    Answered in the right language: True
+
+EVIDENCE — RETRIEVED CHUNKS (top 3 of 5 passed to the model)
+
+  [1] score 0.5946  |  सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)
+      Section ७  page 20  |  file: rti_act_2005_hi.pdf
+      लेखबद्घ किए जाने वाले कारणों॰ से, अपील की प्राप्ति के तीस दिन क भीतर या
+      ऐसी विस्तारित अवधि के भीतर जो उसके फाइल किए जाने की तारीख से कुल पैंतालीस
+      दिन से अधिक न हो, किया जाएगा ) यथास्थिति, केन्द्रीय सूचना आयोग या राज्य
+      सूचना आयोग का विनिश्चय आबद्धकर होगा (८) अपने विनिश्चय में॰ यथास्थिति
+      केन्द्रीय सूच
+
+  [2] score 0.5941  |  सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)
+      Section 30  page 10  |  file: rti_act_2005_hi.pdf
+      क अधिनियमन के सौ दिन क भीतर किसी अधिकारी को प्रत्येक उपमंडल स्तर या अन्य
+      उप जिला स्तर पर यथास्थिति केंद्रीय सहायक लोक सूचना अधिकारी या किसी राज्य
+      सहायक लोक सूचना अधिकारी के रूप में इस अधिनियम के अधीन सूचना के लिए आवेदन
+      या अपील प्राप्त करने और उसे तत्काल यथास्थिति कंद्रीय लोक सूचना अधिकारी या
+      राज्य ल
+
+  [3] score 0.5923  |  सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)
+      Section ७  page 11  |  file: rti_act_2005_hi.pdf
+      ७ . अनुरोध का निपटारा १ धारा 5 की उपधारा (२ के परंतुक याधारा 6 की उपधारां
+      (३) के परंतुक के अधीन रहते हुए धारा 6 क अधीन अनुरोध के प्राप्त होने पर
+      यथास्थिति केन्द्रीय लोक सूचना अधिकारी या राज्य लोक सूचना अधिकारी,
+      यथासंभवशीघ्रता से॰ और किसी भी दशा में अनुरोध की प्राप्ति क तीस दिन के भीतर
+      ऐसी फीस क संदा
+
+================================================================================
+CASE CRI-06   [in_scope]   language: hi
+================================================================================
+
+QUESTION
+    पुलिस मेरी एफआईआर दर्ज नहीं कर रही है, मुझे क्या करना चाहिए?
+
+EXPECTED (reference answer from the labelled set)
+    Legal domain  : criminal
+    Source Act(s) : bnss_2023.pdf
+    Section(s)    : 173, 175
+
+GENERATED ANSWER
+    मुझे यहाँ दिया गया अभियांत्रित अफाइट नहीं दिया गया है, तो मैं यह कर सकता
+    हूँ:
+
+    1. अपने नाम और अफाइट नंबर को अपने नामकरण दर्ज करने के लिए एक नियमित रूप में
+    अपने नामकरण दर्ज कार्यक्रम का उपयोग कर सकता हूँ। (The Bharatiya Nagarik
+    Suraksha Sanhita, 2023, Section 531, Page 190)
+
+    2. अफाइट दर्ज नहीं करने के बाद, मैं एक नियमित रूप में अपने नामकरण दर्ज
+    कार्यक्रम का उपयोग कर सकता हूँ और अपने नामकरण दर्ज कार्यक्रम के अनुसार अफाइट
+    दर्ज कर सकता हूँ। (The Bharatiya Nagarik Suraksha Sanhita, 2023, Section
+    531, Page 190)
+
+    3. यदि अफाइट दर्ज नहीं किया जा सके, मैं एक नियमित रूप में अपने नामकरण दर्ज
+    कार्यक्रम का उपयोग कर सकता हूँ और नामकरण दर्ज कार्यक्रम के अनुसार अफाइट दर्ज
+    कर सकता हूँ। (The Bharatiya Nagarik Suraksha Sanhita, 2023, Section 531,
+    Page 190)
+
+    4. यदि अफाइट दर्ज नहीं किया जा सके, मैं एक नियमित रूप में अपने नामकरण दर्ज
+    कार्यक्रम का उपयोग कर सकता हूँ और नामकरण दर्ज कार्यक्रम के अनुसार अफाइट दर्ज
+    कर सकता हूँ। (The Bharatiya Nagarik Suraksha Sanhita, 2023, Section 531,
+    Page 190)
+
+    5. यदि अफाइट दर
+
+RETRIEVAL
+    Classified as         : rti  (expected: criminal)
+    Top similarity        : 0.5641
+    Filter applied        : rti
+    Fell back to full KB  : True
+    Chunks used           : 5
+    Abstained             : False
+    Expected Act retrieved: True
+    Expected section found: False
+    Precision@5           : 1.0
+
+VERIFICATION
+    Grounded (no invented sections): True
+    Reference keywords found      : 0/0
+    Answered in the right language: True
+
+EVIDENCE — RETRIEVED CHUNKS (top 3 of 5 passed to the model)
+
+  [1] score 0.5641  |  The Bharatiya Nagarik Suraksha Sanhita, 2023
+      Section 172  page 53  |  file: bnss_2023.pdf
+      of the offence,— (i) proceed to conduct preliminary enquiry to ascertain
+      whether there exists a prima facie case for proceeding in the matter
+      within a period of fourteen days; or (ii) proceed with investigation when
+      there exists a prima facie case. (4) Any person aggrieved by a refusal on
+      the part o
+
+  [2] score 0.5469  |  The Bharatiya Nagarik Suraksha Sanhita, 2023
+      Section 531  page 190  |  file: bnss_2023.pdf
+      Police Station……… To, ................................. [Name of the
+      Accused/Noticee] ................................. [Last known Address]
+      ................................. [Phone No./Email ID (if any)] In
+      pursuance of sub-section ( 3) of section 35 of the Bharatiya Nagarik
+      Suraksha Sanhita, 2023,
+
+  [3] score 0.545  |  The Bharatiya Nagarik Suraksha Sanhita, 2023
+      Section 531  page 240  |  file: bnss_2023.pdf
+      FORM No. 49 WARRANT OF A TTACHMENT TO ENFORCE A BOND (See section 491) To
+      the Police Officer in charge of the police station
+      at..............................................
+      WHEREAS..............................................(name, description
+      and address of person) has failed to appear on........
+
+================================================================================
+CASE OOS-01   [out_of_scope]   language: en
+================================================================================
+
+QUESTION
+    How do I apply for a United States tourist visa from India?
+
+EXPECTED (reference answer from the labelled set)
+    The system must REFUSE this question.
+    Reason        : Immigration law is not in the knowledge base.
+
+GENERATED ANSWER
+    I could not find anything in my knowledge base that covers this question. My
+    knowledge base contains Indian law on Right to Information, tenancy,
+    consumer protection, family law and criminal procedure. For anything else,
+    or for advice on your specific case, please consult a lawyer or your nearest
+    District Legal Services Authority (free legal aid).
+
+RETRIEVAL
+    Classified as         : general  (expected: None)
+    Top similarity        : 0.4796
+    Filter applied        : None
+    Fell back to full KB  : False
+    Chunks used           : 0
+    Abstained             : True
+
+EVIDENCE — no chunks retrieved (question refused).
+
+================================================================================
+CASE OOS-04   [out_of_scope]   language: en
+================================================================================
+
+QUESTION
+    What is the penalty for late filing of GST returns under Indian tax law?
+
+EXPECTED (reference answer from the labelled set)
+    The system must REFUSE this question.
+    Reason        : Indian law, but tax law is not among the five indexed
+    domains — the hardest abstention case.
+
+GENERATED ANSWER
+    The question asks about the penalty for late filing of GST returns under
+    Indian tax law, but the provided context passages do not contain any
+    information related to GST returns or penalties for late filings.
+
+    To answer this question, you would need to consult the Goods and Services
+    Tax Act, 2017, which is the primary legislation governing GST in India. The
+    relevant section would be Section 133 of the Goods and Services Tax Act,
+    2017, which deals with penalties for non-compliance with the filing of
+    returns.
+
+    For practical purposes, if you need to know the penalties for late filing of
+    GST returns, you should refer to Section 133 of the Goods and Services Tax
+    Act, 2017. This section outlines the penalties for failing to file returns
+    within the prescribed time.
+
+    If you have any specific details or need further information on penalties,
+    you should consult the Goods and Services Tax Act, 2017, and Section 133 for
+    the most accurate and up-to-date information.
+
+RETRIEVAL
+    Classified as         : consumer  (expected: None)
+    Top similarity        : 0.5588
+    Filter applied        : consumer
+    Fell back to full KB  : True
+    Chunks used           : 5
+    Abstained             : False
+
+EVIDENCE — RETRIEVED CHUNKS (top 3 of 5 passed to the model)
+
+  [1] score 0.5588  |  The Bharatiya Nyaya Sanhita, 2023
+      Section 209  page 59  |  file: bns_2023.pdf
+      209.Whoever fails to appear at the specified place and the specified time
+      as required by a proclamation published under sub-section (1) of section
+      84 of the Bharatiya Nagarik Suraksha Sanhita, 2023, shall be punished with
+      imprisonment for a term which may extend to three years, or with fine, or
+      with
+
+  [2] score 0.5464  |  The Consumer Protection Act, 2019
+      Section 91  page 33  |  file: cpa_2019.pdf
+      distributing or importing products containing adulterant. Punishment for
+      manufacturing for sale or for storing or selling or distributing or
+      importing spurious goods. 45 of 1860. 34 THE GAZETTE OF INDIA
+      EXTRAORDINARY [P ART II— (b) causing injury resulting in grievous hurt to
+      the consumer, with impr
+
+  [3] score 0.5359  |  The Bharatiya Nagarik Suraksha Sanhita, 2023
+      Section 531  page 176  |  file: bnss_2023.pdf
+      to be executed after it has been satisfied. 248( a) False charge of
+      offence Imprisonment for 5 years, Non-cognizable. Bailable. Magistrate of
+      the first made with intent to injure. or fine of 2 lakh rupees, class. or
+      both. 248( b) Criminal proceeding Imprisonment for 10 years Non-
+      cognizable. Bailable
+
+
+================================================================================
+APPENDIX B — EVIDENCE OF RETRIEVAL, ALL TEST CASES
+================================================================================
+
+For every labelled query: what the retrieval stage returned, before any
+generation. In-scope cases should retrieve the expected Act; out-of-scope cases
+should fall below the abstention threshold and retrieve nothing.
+
+ID       LANG  TOP SIM  ACT RETRIEVED                     SECTIONS RETRIEVED
+--------------------------------------------------------------------------------
+rti-01   en    0.6128   rti_act_2005_hi.pdf, rti_act_2005 30, 5, 7, 6, ७
+rti-02   en    0.7161   rti_act_2005_en.pdf               7, 17, 9, 20
+rti-03   en    0.5896   rti_act_2005_en.pdf, rti_act_2005 8, 10, ७
+rti-04   en    0.601    rti_act_2005_en.pdf, rti_act_2005 7, 9, ७
+rti-05   mr    0.5946   rti_act_2005_hi.pdf, rti_act_2005 ७, 30, 19, 7
+rti-06   hi    0.6763   rti_act_2005_hi.pdf, rti_act_2005 ७, 17, 30
+ten-01   en    0.6566   model_tenancy_act_2021.pdf, mh_re 11, 15, 22
+ten-02   en    0.7193   model_tenancy_act_2021.pdf, mh_re 20, 37, 11
+ten-03   en    0.6581   model_tenancy_act_2021.pdf, mh_re 2, 37, 35
+ten-04   en    0.6751   mh_rent_control_1999.pdf, model_t 11, 9, 3, 26
+ten-05   hi    0.5596   model_tenancy_act_2021.pdf, mh_re 11, 15
+con-01   en    0.5677   cpa_2019.pdf                      17, 81, 35, 101, 38
+con-02   en    0.673    cpa_2019.pdf                      81, 38
+con-03   en    0.6663   cpa_2019.pdf                      9, 35
+con-04   en    0.6142   cpa_2019.pdf                      81, 85, 39
+con-05   en    0.7056   cpa_2019.pdf                      89, 39, 21, 91
+fam-01   en    0.6084   hindu_marriage_act_1955.pdf       9, 25, 5, 8, 24
+fam-02   en    0.7154   hindu_marriage_act_1955.pdf       6, 13B, 4, 8
+fam-03   en    0.6191   hindu_marriage_act_1955.pdf       13B, 13, 14, 3
+fam-04   en    0.6192   dv_act_2005.pdf                   1, 11, 18, 9, 10
+fam-05   en    0.6082   dv_act_2005.pdf                   19, 2, 1, 10
+fam-06   mr    0.5455   bnss_2023.pdf, hindu_marriage_act 143, 8, 3, 6
+cri-01   en    0.5588   bnss_2023.pdf                     172, 531, 39, 40
+cri-02   en    0.7025   bnss_2023.pdf                     172, 34, 174, 169
+cri-03   en    0.6854   bnss_2023.pdf                     37, 36, 51, 34
+cri-04   en    0.705    bns_2023.pdf                      351, 135, 112, 299
+cri-05   en    0.7111   bns_2023.pdf, bnss_2023.pdf       85, 79, 531, 86, 359
+cri-06   hi    0.5641   bnss_2023.pdf                     172, 531, 396, 176
+oos-01   en    0.4796   — refused —                       
+oos-02   en    0.3847   — refused —                       
+oos-03   en    0.4119   — refused —                       
+oos-04   en    0.5588   bns_2023.pdf, cpa_2019.pdf, bnss_ 209, 91, 531, 135, 299
+oos-05   en    0.4606   — refused —                       
+
+Full text of every retrieved chunk for every case is in
+evaluation/results/eval_results.json.
+

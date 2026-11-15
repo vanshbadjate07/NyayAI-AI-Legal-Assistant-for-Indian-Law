@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1000" viewBox="0 0 1240 1000" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#44403c"/>
+    </marker>
+    <style>
+      .band  { fill:#fafaf9; stroke:#d6d3d1; stroke-width:1.5; rx:12; }
+      .bandl { font-size:13px; font-weight:bold; fill:#78716c; letter-spacing:1.2px; }
+      .box   { fill:#ffffff; stroke:#44403c; stroke-width:1.5; rx:7; }
+      .acc   { fill:#ecfdf5; stroke:#1b5c45; stroke-width:1.8; rx:7; }
+      .warn  { fill:#fffbeb; stroke:#b45309; stroke-width:1.8; rx:7; }
+      .store { fill:#f5f5f4; stroke:#44403c; stroke-width:1.5; rx:7; }
+      .t     { font-size:13px; fill:#1c1917; }
+      .ts    { font-size:11px; fill:#78716c; }
+      .lbl   { font-size:11px; fill:#57534e; }
+      .ln    { stroke:#44403c; stroke-width:1.6; fill:none; marker-end:url(#a); }
+      .lnd   { stroke:#a8a29e; stroke-width:1.4; fill:none; stroke-dasharray:4 3; marker-end:url(#a); }
+    </style>
+  </defs>
+
+  <text x="24" y="34" font-size="20" font-weight="bold" fill="#1c1917">NyayAI — RAG pipeline</text>
+  <text x="24" y="56" class="ts">Question in English / Hindi / Marathi → grounded answer with cited sections, or a refusal</text>
+
+  <!-- USER -->
+  <rect x="470" y="78" width="300" height="40" class="acc"/>
+  <text x="620" y="103" text-anchor="middle" class="t">User — English / Hindi / Marathi</text>
+
+  <!-- FRONTEND -->
+  <rect x="300" y="142" width="640" height="88" class="band"/>
+  <text x="318" y="164" class="bandl">REACT + VITE FRONTEND :5173</text>
+  <rect x="330" y="176" width="240" height="40" class="box"/>
+  <text x="450" y="201" text-anchor="middle" class="t">Chat page + history</text>
+  <rect x="668" y="176" width="240" height="40" class="box"/>
+  <text x="788" y="201" text-anchor="middle" class="t">Upload (image / PDF)</text>
+
+  <!-- API -->
+  <rect x="300" y="256" width="640" height="104" class="band"/>
+  <text x="318" y="278" class="bandl">FASTAPI BACKEND :8000</text>
+  <rect x="330" y="292" width="150" height="40" class="box"/>
+  <text x="405" y="317" text-anchor="middle" class="t">POST /api/query</text>
+  <rect x="496" y="292" width="150" height="40" class="box"/>
+  <text x="571" y="310" text-anchor="middle" class="ts">POST /api/retrieve</text>
+  <text x="571" y="325" text-anchor="middle" class="ts">retrieval only</text>
+  <rect x="662" y="292" width="120" height="40" class="box"/>
+  <text x="722" y="317" text-anchor="middle" class="t">/api/upload</text>
+  <rect x="798" y="292" width="110" height="40" class="box"/>
+  <text x="853" y="317" text-anchor="middle" class="t">/api/health</text>
+
+  <!-- PIPELINE -->
+  <rect x="300" y="386" width="640" height="446" class="band"/>
+  <text x="318" y="408" class="bandl">REQUEST PIPELINE</text>
+
+  <rect x="390" y="420" width="220" height="38" class="box"/>
+  <text x="500" y="438" text-anchor="middle" class="t">1. Language detection</text>
+  <text x="500" y="452" text-anchor="middle" class="ts">langdetect → en / hi / mr</text>
+
+  <rect x="390" y="476" width="220" height="38" class="box"/>
+  <text x="500" y="494" text-anchor="middle" class="t">2. Domain routing</text>
+  <text x="500" y="508" text-anchor="middle" class="ts">keywords, LLM fallback</text>
+
+  <rect x="390" y="532" width="220" height="38" class="box"/>
+  <text x="500" y="550" text-anchor="middle" class="t">3. Embed query</text>
+  <text x="500" y="564" text-anchor="middle" class="ts">BAAI/bge-m3 (multilingual)</text>
+
+  <rect x="390" y="588" width="220" height="38" class="box"/>
+  <text x="500" y="606" text-anchor="middle" class="t">4. Vector search, filtered</text>
+  <text x="500" y="620" text-anchor="middle" class="ts">cosine, fetch 15</text>
+
+  <rect x="390" y="644" width="220" height="38" class="box"/>
+  <text x="500" y="662" text-anchor="middle" class="t">5. Cap 2 per section</text>
+  <text x="500" y="676" text-anchor="middle" class="ts">keep top 5</text>
+
+  <rect x="390" y="700" width="220" height="38" class="warn"/>
+  <text x="500" y="718" text-anchor="middle" class="t">6. Abstention gate</text>
+  <text x="500" y="732" text-anchor="middle" class="ts">similarity &lt; 0.52 → refuse</text>
+
+  <rect x="390" y="756" width="220" height="38" class="acc"/>
+  <text x="500" y="774" text-anchor="middle" class="t">7. Generate — qwen2.5:3b</text>
+  <text x="500" y="788" text-anchor="middle" class="ts">context-only prompt</text>
+
+  <!-- side boxes -->
+  <rect x="668" y="588" width="240" height="38" class="box"/>
+  <text x="788" y="606" text-anchor="middle" class="t">OCR service</text>
+  <text x="788" y="620" text-anchor="middle" class="ts">qwen3-vl:2b / EasyOCR</text>
+
+  <rect x="668" y="700" width="240" height="38" class="warn"/>
+  <text x="788" y="718" text-anchor="middle" class="t">Refuse + legal-aid pointer</text>
+  <text x="788" y="732" text-anchor="middle" class="ts">no LLM call made</text>
+
+  <rect x="668" y="756" width="240" height="38" class="acc"/>
+  <text x="788" y="774" text-anchor="middle" class="t">8. Grounding check</text>
+  <text x="788" y="788" text-anchor="middle" class="ts">flag sections not in context</text>
+
+  <!-- KNOWLEDGE BASE (build time) -->
+  <rect x="24" y="142" width="248" height="690" class="band"/>
+  <text x="42" y="164" class="bandl">KNOWLEDGE BASE</text>
+  <text x="42" y="180" class="ts">build time, run once</text>
+
+  <rect x="48" y="196" width="200" height="44" class="box"/>
+  <text x="148" y="214" text-anchor="middle" class="t">9 Indian Act PDFs</text>
+  <text x="148" y="229" text-anchor="middle" class="ts">5 legal domains</text>
+
+  <rect x="48" y="268" width="200" height="44" class="warn"/>
+  <text x="148" y="286" text-anchor="middle" class="t">validate_kb.py</text>
+  <text x="148" y="301" text-anchor="middle" class="ts">header, text layer, script</text>
+
+  <rect x="48" y="340" width="200" height="44" class="box"/>
+  <text x="148" y="358" text-anchor="middle" class="t">ocr_fallback.py</text>
+  <text x="148" y="373" text-anchor="middle" class="ts">2 files: scan + legacy font</text>
+
+  <rect x="48" y="412" width="200" height="58" class="box"/>
+  <text x="148" y="430" text-anchor="middle" class="t">chunking.py</text>
+  <text x="148" y="445" text-anchor="middle" class="ts">clean, unwrap lines,</text>
+  <text x="148" y="458" text-anchor="middle" class="ts">section-aware 900/180</text>
+
+  <rect x="48" y="498" width="200" height="44" class="box"/>
+  <text x="148" y="516" text-anchor="middle" class="t">ingest.py</text>
+  <text x="148" y="531" text-anchor="middle" class="ts">embed + metadata</text>
+
+  <rect x="48" y="570" width="200" height="58" class="store"/>
+  <text x="148" y="590" text-anchor="middle" class="t">ChromaDB</text>
+  <text x="148" y="605" text-anchor="middle" class="ts">cosine index, metadata:</text>
+  <text x="148" y="618" text-anchor="middle" class="ts">act, section, page, lang</text>
+
+  <rect x="48" y="668" width="200" height="72" class="acc"/>
+  <text x="148" y="688" text-anchor="middle" class="t">evaluation/</text>
+  <text x="148" y="703" text-anchor="middle" class="ts">33 labelled queries</text>
+  <text x="148" y="716" text-anchor="middle" class="ts">routing, retrieval,</text>
+  <text x="148" y="729" text-anchor="middle" class="ts">grounding, abstention</text>
+
+  <!-- ANSWER -->
+  <rect x="300" y="856" width="640" height="62" class="acc"/>
+  <text x="620" y="878" text-anchor="middle" class="t">Answer + 5 source chunks (Act, section, page, similarity) + grounding result</text>
+  <text x="620" y="898" text-anchor="middle" class="ts">or: "not in my knowledge base" + pointer to free legal aid</text>
+
+  <text x="24" y="952" class="ts">Every question and answer is also written to a SQLite query log. Everything runs locally: no API keys, no cloud calls.</text>
+  <text x="24" y="970" class="ts">The model sees only retrieved Act text — it is never asked to answer from its own knowledge.</text>
+
+  <!-- EDGES -->
+  <path class="ln" d="M560 118 L560 142 L450 142 L450 176"/>
+  <path class="ln" d="M680 118 L680 142 L788 142 L788 176"/>
+  <path class="ln" d="M450 216 L450 292"/>
+  <path class="ln" d="M788 216 L788 292"/>
+  <path class="ln" d="M405 332 L405 400 L500 400 L500 420"/>
+  <path class="ln" d="M722 332 L722 560 L788 560 L788 588"/>
+  <path class="ln" d="M668 600 L634 600 L634 439 L612 439"/>
+  <path class="ln" d="M500 458 L500 476"/>
+  <path class="ln" d="M500 514 L500 532"/>
+  <path class="ln" d="M500 570 L500 588"/>
+  <path class="ln" d="M500 626 L500 644"/>
+  <path class="ln" d="M500 682 L500 700"/>
+  <path class="ln" d="M500 738 L500 756"/>
+  <path class="ln" d="M610 719 L668 719"/>
+  <text x="639" y="713" text-anchor="middle" class="lbl">no</text>
+  <path class="ln" d="M610 775 L668 775"/>
+  <path class="ln" d="M500 794 L500 820 L620 820 L620 856"/>
+  <path class="ln" d="M788 794 L788 820 L660 820 L660 856"/>
+  <path class="ln" d="M908 719 L924 719 L924 836 L800 836 L800 856"/>
+  <path class="ln" d="M248 607 L388 607"/>
+  <path class="ln" d="M148 240 L148 268"/>
+  <path class="ln" d="M148 312 L148 340"/>
+  <path class="ln" d="M148 384 L148 412"/>
+  <path class="ln" d="M148 470 L148 498"/>
+  <path class="ln" d="M148 542 L148 570"/>
+  <path class="lnd" d="M148 628 L148 668"/>
+  <path class="lnd" d="M248 690 L560 690 L560 700"/>
+</svg>

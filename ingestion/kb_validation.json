@@ -1,0 +1,101 @@
+[
+  {
+    "file": "cpa_2019.pdf",
+    "vertical": "consumer",
+    "size_kb": 1208.0,
+    "pages": 40,
+    "chars": 127833,
+    "chars_per_page": 3195.8,
+    "devanagari_ratio": 0.0,
+    "status": "ok",
+    "problem": ""
+  },
+  {
+    "file": "bns_2023.pdf",
+    "vertical": "criminal",
+    "size_kb": 1293.2,
+    "pages": 102,
+    "chars": 407857,
+    "chars_per_page": 3998.6,
+    "devanagari_ratio": 0.0,
+    "status": "ok",
+    "problem": ""
+  },
+  {
+    "file": "bnss_2023.pdf",
+    "vertical": "criminal",
+    "size_kb": 1985.5,
+    "pages": 249,
+    "chars": 856232,
+    "chars_per_page": 3438.7,
+    "devanagari_ratio": 0.0,
+    "status": "ok",
+    "problem": ""
+  },
+  {
+    "file": "dv_act_2005.pdf",
+    "vertical": "family",
+    "size_kb": 532.0,
+    "pages": 12,
+    "chars": 37120,
+    "chars_per_page": 3093.3,
+    "devanagari_ratio": 0.0,
+    "status": "ok",
+    "problem": ""
+  },
+  {
+    "file": "hindu_marriage_act_1955.pdf",
+    "vertical": "family",
+    "size_kb": 263.0,
+    "pages": 14,
+    "chars": 44395,
+    "chars_per_page": 3171.1,
+    "devanagari_ratio": 0.0,
+    "status": "ok",
+    "problem": ""
+  },
+  {
+    "file": "rti_act_2005_en.pdf",
+    "vertical": "rti",
+    "size_kb": 810.3,
+    "pages": 27,
+    "chars": 70707,
+    "chars_per_page": 2618.8,
+    "devanagari_ratio": 0.0,
+    "status": "ok",
+    "problem": ""
+  },
+  {
+    "file": "rti_act_2005_hi.pdf",
+    "vertical": "rti",
+    "size_kb": 867.2,
+    "pages": 27,
+    "chars": 51222,
+    "chars_per_page": 1897.1,
+    "devanagari_ratio": 0.0,
+    "status": "bad_encoding",
+    "problem": "named as Devanagari but extracts almost no Devanagari — legacy non-Unicode font; needs the OCR fallback"
+  },
+  {
+    "file": "mh_rent_control_1999.pdf",
+    "vertical": "tenancy",
+    "size_kb": 1924.0,
+    "pages": 60,
+    "chars": 1,
+    "chars_per_page": 0.0,
+    "devanagari_ratio": 0.0,
+    "status": "no_text_layer",
+    "problem": "scanned PDF — needs the OCR fallback in ingest.py"
+  },
+  {
+    "file": "model_tenancy_act_2021.pdf",
+    "vertical": "tenancy",
+    "size_kb": 1035.4,
+    "pages": 28,
+    "chars": 55011,
+    "chars_per_page": 1964.7,
+    "devanagari_ratio": 0.0,
+    "status": "ok",
+    "problem": ""
+  }
+]

@@ -1,0 +1,18 @@
+fastapi
+uvicorn[standard]
+chromadb
+sentence-transformers
+pypdf
+python-multipart
+python-dotenv
+pydantic
+pydantic-settings
+ollama
+Pillow
+langdetect
+sqlalchemy
+easyocr
+
+# --- testing ---
+pytest
+httpx

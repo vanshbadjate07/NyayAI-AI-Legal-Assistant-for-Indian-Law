@@ -1,0 +1,62 @@
+flowchart TB
+    U([User — English / Hindi / Marathi])
+
+    subgraph FE["React + Vite frontend (port 5173)"]
+        CHAT[Chat page<br/>history, citations, sources]
+        UP[Upload modal<br/>image / PDF]
+    end
+
+    subgraph API["FastAPI backend (port 8000)"]
+        Q["/api/query"]
+        R["/api/retrieve<br/>retrieval only, no LLM"]
+        UPL["/api/upload"]
+        H["/api/health"]
+        OCRS[OCR service<br/>qwen3-vl / EasyOCR]
+        LANG[Language detection<br/>langdetect]
+        CLS[Vertical classifier<br/>keywords, LLM fallback]
+
+        subgraph RET["Retrieval pipeline"]
+            EMB[Embed query<br/>BAAI/bge-m3]
+            SRCH[Vector search<br/>filtered by vertical]
+            FB{Top score<br/>below 0.55?}
+            FULL[Re-search whole collection]
+            DEDUP[De-duplicate by section<br/>keep top 5]
+            ABST{Top score<br/>below 0.52?}
+        end
+
+        GEN[Generate answer<br/>qwen2.5:3b, grounded prompt]
+        GRD[Grounding check<br/>flag sections not in context]
+        REFUSE[Refuse + point to legal aid]
+        LOG[(SQLite query log)]
+    end
+
+    subgraph KB["Knowledge base — build time"]
+        PDFS[9 Indian Act PDFs]
+        VAL[validate_kb.py<br/>text layer + script checks]
+        OCRF[ocr_fallback.py<br/>2 scanned / mojibake files]
+        CHUNK[chunking.py<br/>clean, unwrap, section-aware<br/>900 chars / 180 overlap]
+        INGEST[ingest.py<br/>embed + index]
+        CHROMA[(ChromaDB<br/>cosine, metadata)]
+    end
+
+    subgraph EVAL["Evaluation"]
+        TQ[33 labelled queries]
+        RUN[run_eval.py<br/>routing, retrieval,<br/>grounding, abstention]
+        CAL[calibrate.py<br/>threshold sweep]
+    end
+
+    U -->|text| CHAT --> Q
+    U -->|image| UP --> UPL --> OCRS --> LANG
+    Q --> LANG --> CLS --> EMB --> SRCH --> FB
+    FB -->|yes| FULL --> DEDUP
+    FB -->|no| DEDUP --> ABST
+    ABST -->|yes| REFUSE
+    ABST -->|no| GEN --> GRD --> CHAT
+    REFUSE --> CHAT
+    Q -.-> LOG
+    SRCH <--> CHROMA
+    H --> CHROMA
+
+    PDFS --> VAL --> OCRF --> CHUNK --> INGEST --> CHROMA
+    TQ --> RUN --> R
+    RUN --> CAL

@@ -1,0 +1,19 @@
+# --- Python ---
+venv/
+__pycache__/
+*.pyc
+.env
+*.db
+
+# --- Build artefacts ---
+# The vector store is rebuilt from the PDFs by ingestion/ingest.py (~50 min).
+# It is 37MB of binary index, so it is not tracked; the source documents and
+# the cached OCR text, which are what it is built from, are.
+ingestion/chroma_store/
+
+# --- Node ---
+node_modules/
+dist/
+
+# --- macOS ---
+.DS_Store

@@ -1,0 +1,3337 @@
+{
+  "summary": {
+    "cases_total": 33,
+    "cases_in_scope": 28,
+    "cases_out_of_scope": 5,
+    "errors": 0,
+    "routing": {
+      "vertical_accuracy": 0.893
+    },
+    "retrieval": {
+      "source_hit_at_k": 1.0,
+      "section_hit_at_k": 0.652,
+      "mean_precision_at_k": 0.921,
+      "mean_mrr": 0.958,
+      "mean_top_similarity": 0.64,
+      "top_k": 5,
+      "fetch_k": 15
+    },
+    "abstention": {
+      "false_abstention_rate_in_scope": 0.0,
+      "correct_abstention_rate_out_of_scope": 0.8,
+      "mean_top_similarity_in_scope": 0.64,
+      "mean_top_similarity_out_of_scope": 0.459,
+      "threshold": 0.52
+    },
+    "generation": {
+      "answers_generated": 28,
+      "grounded_rate": 0.857,
+      "hallucinated_sections_total": 5,
+      "cites_section_rate": 0.893,
+      "mean_keyword_coverage": 0.913,
+      "language_correct_rate": 1.0,
+      "mean_answer_chars": 1236.607
+    },
+    "latency_s": {
+      "mean_retrieve": 2.548,
+      "mean_classify": 0.093,
+      "mean_generate": 21.18
+    },
+    "elapsed_s": 786.3
+  },
+  "cases": [
+    {
+      "id": "rti-01",
+      "question": "How do I file an RTI application and how long does the Public Information Officer have to reply?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "rti",
+      "expected_vertical": "rti",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "rti",
+        "vertical_filter_applied": "rti",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.6128,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 17.79,
+        "generate": 13.29
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "rti_act_2005_hi.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_hi.pdf"
+        ],
+        "retrieved_sections": [
+          "30",
+          "5",
+          "6",
+          "7",
+          "७"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 0.6,
+        "mrr": 0.5,
+        "first_relevant_rank": 2,
+        "top_similarity": 0.6128
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.6128,
+          "act": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)",
+          "section": "Section 30",
+          "page": 10,
+          "source": "rti_act_2005_hi.pdf",
+          "text_preview": "क अधिनियमन के सौ दिन क भीतर किसी अधिकारी को प्रत्येक उपमंडल स्तर या अन्य उप जिला स्तर पर यथास्थिति केंद्रीय सहायक लोक सूचना अधिकारी या किसी राज्य सहायक लोक सूचना अधिकारी के रूप में इस अधिनियम के अधीन सूचना के लिए आवेदन या अपील प्राप्त करने और उसे तत्काल यथास्थिति कंद्रीय लोक सूचना अधिकारी या राज्य ल"
+        },
+        {
+          "rank": 2,
+          "score": 0.6103,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 5",
+          "page": 10,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "Officer, as the case may be, to receive the applications for infbrmation or appeals under this Act for forwarding the same forthwith to the Central Public Information Officer or the State Public Information Officer or senior officer specified under sub-section (/) of section 19 or the Central Inform"
+        },
+        {
+          "rank": 3,
+          "score": 0.6084,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 7",
+          "page": 10,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "7. Disposal of request.—(/) Subject to the proviso to sub-section (2) of section 5 or the proviso to sub-section (3) of section 6, the Central Public Information Officer or State Public Information Officer, as the case may be, on receipt of a request under section 6 shall, as expeditiously as possib"
+        },
+        {
+          "rank": 4,
+          "score": 0.6045,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 6",
+          "page": 10,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "6. Request for obtaining information.—(/) A person, who desires to obtain any information under this Act, shall make a request in writing or through electronic means in English or Hindi or in the official language of the area in which the application is being made, accompanying such fee as may be pr"
+        },
+        {
+          "rank": 5,
+          "score": 0.6043,
+          "act": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)",
+          "section": "Section ७",
+          "page": 11,
+          "source": "rti_act_2005_hi.pdf",
+          "text_preview": "७ . अनुरोध का निपटारा १ धारा 5 की उपधारा (२ के परंतुक याधारा 6 की उपधारां (३) के परंतुक के अधीन रहते हुए धारा 6 क अधीन अनुरोध के प्राप्त होने पर यथास्थिति केन्द्रीय लोक सूचना अधिकारी या राज्य लोक सूचना अधिकारी, यथासंभवशीघ्रता से॰ और किसी भी दशा में अनुरोध की प्राप्ति क तीस दिन के भीतर ऐसी फीस क संदा"
+        }
+      ],
+      "answer": "To file an RTI application, a person must make a request in writing or through electronic means in English or Hindi or in the official language of the area in which the application is being made, accompanying such fee as may be prescribed, to the Central Public Information Officer or State Public Information Officer, as the case may be, of the concerned public authority. (The Right to Information Act, 2005, Section 6)\n\nThe Public Information Officer, as the case may be, on receipt of a request under Section 6, shall, as expeditiously as possible, and in any case within thirty days of the receipt of the request, either provide the information on payment of such fee as may be prescribed or reject the request for any of the reasons specified in Sections 8 and 9. (The Right to Information Act, 2005, Section 7)\n\nTherefore, the Public Information Officer has to reply within thirty days of the receipt of the request. If the Public Information Officer is unable to provide the information within this period, they must reject the request and provide a reason for the rejection, as specified in Sections 8 and 9 of the RTI Act, 2005.",
+      "generation": {
+        "answer_chars": 1138,
+        "keywords_expected": [
+          "Public Information Officer",
+          "thirty days"
+        ],
+        "keywords_found": [
+          "Public Information Officer",
+          "thirty days"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "rti-02",
+      "question": "What should I do if the Public Information Officer refuses to give me the information I asked for?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "rti",
+      "expected_vertical": "rti",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "rti",
+        "vertical_filter_applied": "rti",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.7161,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 2.73,
+        "generate": 24.94
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_en.pdf"
+        ],
+        "retrieved_sections": [
+          "17",
+          "20",
+          "7",
+          "9"
+        ],
+        "source_hit": true,
+        "section_hit": false,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.7161
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.7161,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 7",
+          "page": 11,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "and 9: Provided that where the information sought for concerns the life or liberty of a person, the same shall be provided within forty-eight hours of the receipt of the request. (2) If the Central Public Information Officer or State Public Information Officer, as the case may be, fails to give deci"
+        },
+        {
+          "rank": 2,
+          "score": 0.7122,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 7",
+          "page": 11,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "making request for the information shall be provided the information free of charge where a public authority fails to comply with the time limits specified in sub- section (1). (7) Before taking any decision under sub-section (/), the Central Public Information Officer or State Public Information Of"
+        },
+        {
+          "rank": 3,
+          "score": 0.6833,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 17",
+          "page": 18,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "under this Act, or because the Central Assistant Public Information Officer or State Assistant Public Information Officer, as the case may be, has refused to accept his or her application for information or appeal under this Act for forwarding tbe same to the Central Public Information Officer or St"
+        },
+        {
+          "rank": 4,
+          "score": 0.6801,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 9",
+          "page": 13,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "9. Grounds for rejection to access in certain cases.—Without prejudice to the provisions of section 8, a Central Public Information Officer or a State Public Information Officer, as the case may be, may reject a request for information where such a request for providing access would involve an infri"
+        },
+        {
+          "rank": 5,
+          "score": 0.6764,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 20",
+          "page": 21,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "that the burden of proving that he acted reasonably and diligently shall be on the Central Public Information Officer or the State Public Information Officer, as the case may be. (2) Where the Central Information Commission or the State Information Commission, as the case may be, at the time of deci"
+        }
+      ],
+      "answer": "If the Public Information Officer (PIO) refuses to give you the information you asked for, you should follow these steps:\n\n1. **Understand Your Rights**: According to Section 7(1) of the Right to Information Act, 2005, if the information concerns the life or liberty of a person, the PIO must provide it within forty-eight hours of receiving your request. If the PIO fails to provide the information within this period, they are deemed to have refused the request. Therefore, you should first check if the information you requested falls under this category.\n\n2. **Make a Representation**: If the information you are seeking does not fall under the category of life or liberty, you should make a representation to the PIO under Section 7(7) of the Act. This section states that before taking any decision, the PIO must consider the representation made by a third party under Section 1 of the Act. This is your opportunity to present any relevant information or arguments that might influence the PIO's decision.\n\n3. **Communicate the Rejection**: If the PIO still refuses to provide the information, you should be informed of the reasons for the rejection, the period within which you can appeal, and the particulars of the appellate authority as per Section 7(8) of the Act. This section mandates that the PIO must communicate these details to the person making the request.\n\n4. **Consider Further Action**: If you are not satisfied with the PIO's decision, you can consider filing an appeal to the Central Information Commission (CIC) or the State Information Commission (SIC), as the case may be. Section 17 of the Act allows the CIC or SIC to remove the PIO if they have refused to accept an application for information or if they have not provided information within the specified time limit.\n\n5. **Seek Legal Advice**: If the PIO continues to refuse to provide the information, or if you face any other issues related to the Right to Information Act, it is advisable to seek legal advice from a lawyer or a local legal aid clinic. They can provide you with more tailored guidance based on your specific situation.\n\nBy following these steps, you can ensure that your rights under the Right to Information Act, 2005, are protected and that you receive the information you are entitled to.",
+      "generation": {
+        "answer_chars": 2292,
+        "keywords_expected": [
+          "appeal"
+        ],
+        "keywords_found": [
+          "appeal"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "rti-03",
+      "question": "Which kinds of information are exempt from disclosure under the RTI Act?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "rti",
+      "expected_vertical": "rti",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "rti",
+        "vertical_filter_applied": "rti",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.5896,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 7.77,
+        "generate": 10.24
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_hi.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_en.pdf"
+        ],
+        "retrieved_sections": [
+          "10",
+          "8",
+          "७"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 0.8,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.5896
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.5896,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 8",
+          "page": 12,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "8. Exemption from disclosure of information. — (/) Notwithstanding anything contained in this Act, there shall be no obligation to give any citizen,— (a) information, disclosure of which would prejudicially affect the sovereignty and integrity of India, the security, strategic, scientific or economi"
+        },
+        {
+          "rank": 2,
+          "score": 0.5684,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 10",
+          "page": 13,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "10. Severability.—(/) Where a request for access to informatiOn is rejected on the ground that it is in relation to information which is exempt from disclosure, then, notwithstanding anything contained in this Act, access may be provided to that part of the record which does not contain any informat"
+        },
+        {
+          "rank": 3,
+          "score": 0.5496,
+          "act": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)",
+          "section": "Section ७",
+          "page": 12,
+          "source": "rti_act_2005_hi.pdf",
+          "text_preview": "उपलब्य कराया जाएगा जिसमें उसे मांगा गया है॰ जिब तक कि वह लोक प्राधिकारी के स्रोतों को अननुपाती रूप से विचलित न करता हो या प्रश्नगत अभिलेख की सुरक्षा या संरक्षण के प्रतिकूल न हो ८. सूचना क प्रकट किए जाने से छूट ७१) इस अधिनियम में अंतर्विष्ट किसी बात के होते हुए भी॰ किसी नागरिक को निम्नलिखित सूचना देन"
+        },
+        {
+          "rank": 4,
+          "score": 0.5337,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 8",
+          "page": 12,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "decision has been taken, and the matter is complete, or over: Provided figther that those matters which come under the exemptions specified in this section shall not be disclosed; (j) information which relates to personal information the disclosure of which has no relationship to any public activity"
+        },
+        {
+          "rank": 5,
+          "score": 0.5269,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 10",
+          "page": 13,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "to the applicant, informing— (a) that only part of the record requested, after severance of the record containing information which is exempt from disclosure, is being provided; (b) the reasons for the decision, including any findings on any material question of fact, referring to the material on wh"
+        }
+      ],
+      "answer": "Under the Right to Information Act, 2005 (RTI Act), 2005, Section 8, the following kinds of information are exempt from disclosure:\n\n1. Information, disclosure of which would prejudicially affect the sovereignty and integrity of India, the security, strategic, scientific or economic interests of the State, relation with foreign State or lead to incitement of an offence. (RTI Act, 2005, Section 8(a))\n\n2. Information which has been expressly forbidden to be published by any court of law or tribunal or the disclosure of which may constitute contempt of court. (RTI Act, 2005, Section 8(b))\n\n3. Information, the disclosure of which would cause a breach of privilege of Parliament or the State Legislature. (RTI Act, 2005, Section 8(c))\n\nThese exemptions are in line with the provisions of the RTI Act, 2005, Section 8, which outlines the conditions under which information can be withheld from the public.",
+      "generation": {
+        "answer_chars": 907,
+        "keywords_expected": [
+          "exempt"
+        ],
+        "keywords_found": [
+          "exempt"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "rti-04",
+      "question": "Can an RTI application be rejected if it concerns the life or liberty of a person, and what is the time limit then?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "rti",
+      "expected_vertical": "rti",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "rti",
+        "vertical_filter_applied": "rti",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.601,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 1.49,
+        "generate": 8.52
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_hi.pdf",
+          "rti_act_2005_hi.pdf"
+        ],
+        "retrieved_sections": [
+          "7",
+          "9",
+          "७"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 0.6,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.601
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.601,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 7",
+          "page": 11,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "and 9: Provided that where the information sought for concerns the life or liberty of a person, the same shall be provided within forty-eight hours of the receipt of the request. (2) If the Central Public Information Officer or State Public Information Officer, as the case may be, fails to give deci"
+        },
+        {
+          "rank": 2,
+          "score": 0.5746,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 7",
+          "page": 11,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "making request for the information shall be provided the information free of charge where a public authority fails to comply with the time limits specified in sub- section (1). (7) Before taking any decision under sub-section (/), the Central Public Information Officer or State Public Information Of"
+        },
+        {
+          "rank": 3,
+          "score": 0.5478,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 9",
+          "page": 13,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "9. Grounds for rejection to access in certain cases.—Without prejudice to the provisions of section 8, a Central Public Information Officer or a State Public Information Officer, as the case may be, may reject a request for information where such a request for providing access would involve an infri"
+        },
+        {
+          "rank": 4,
+          "score": 0.5473,
+          "act": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)",
+          "section": "Section ७",
+          "page": 11,
+          "source": "rti_act_2005_hi.pdf",
+          "text_preview": "७ . अनुरोध का निपटारा १ धारा 5 की उपधारा (२ के परंतुक याधारा 6 की उपधारां (३) के परंतुक के अधीन रहते हुए धारा 6 क अधीन अनुरोध के प्राप्त होने पर यथास्थिति केन्द्रीय लोक सूचना अधिकारी या राज्य लोक सूचना अधिकारी, यथासंभवशीघ्रता से॰ और किसी भी दशा में अनुरोध की प्राप्ति क तीस दिन के भीतर ऐसी फीस क संदा"
+        },
+        {
+          "rank": 5,
+          "score": 0.5264,
+          "act": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)",
+          "section": "Section ७",
+          "page": 18,
+          "source": "rti_act_2005_hi.pdf",
+          "text_preview": "अधिकारी अथवा ज्येष्ठं अधिकारी या यथास्थिति, केन्द्रीय लोक सूचना अधिकारी या कन्द्रीय सूचना आयोग या राज्य सूचना आयोग को उसके आवेदन को भेजने के लिए स्वीकार करने से इंकार कर दिया है ; (ख जिसे इस अधिनियम के अधीन अनुरोध की गई कोई जानकारी तक पहुंच के लिए इंकार कर दिया गंया है सूचना का अधिकार अधिनियम २००५ अ"
+        }
+      ],
+      "answer": "Yes, an RTI application can be rejected if it concerns the life or liberty of a person. According to Section 7(2) of the Right to Information Act, 2005, if the Central Public Information Officer or State Public Information Officer fails to provide a decision within the forty-eight hours specified, they are deemed to have refused the request. Therefore, if the information sought involves the life or liberty of a person, the time limit for providing the information is forty-eight hours. If the officer fails to provide a decision within this period, the officer is deemed to have refused the request. It is important for the applicant to understand that the officer must provide the information within this time limit or it will be considered a refusal. If the officer fails to comply with this time limit, the applicant can appeal within the period specified in Section 7(8) of the Act.",
+      "generation": {
+        "answer_chars": 890,
+        "keywords_expected": [
+          "forty-eight hours"
+        ],
+        "keywords_found": [
+          "forty-eight hours"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "rti-05",
+      "question": "RTI अर्ज कसा दाखल करायचा आणि किती दिवसांत उत्तर मिळते?",
+      "type": "in_scope",
+      "language": "mr",
+      "classified_vertical": "rti",
+      "expected_vertical": "rti",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "rti",
+        "vertical_filter_applied": "rti",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.5946,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 2.96,
+        "generate": 45.79
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "rti_act_2005_hi.pdf",
+          "rti_act_2005_hi.pdf",
+          "rti_act_2005_hi.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_en.pdf"
+        ],
+        "retrieved_sections": [
+          "19",
+          "30",
+          "7",
+          "७"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.5946
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.5946,
+          "act": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)",
+          "section": "Section ७",
+          "page": 20,
+          "source": "rti_act_2005_hi.pdf",
+          "text_preview": "लेखबद्घ किए जाने वाले कारणों॰ से, अपील की प्राप्ति के तीस दिन क भीतर या ऐसी विस्तारित अवधि के भीतर जो उसके फाइल किए जाने की तारीख से कुल पैंतालीस दिन से अधिक न हो, किया जाएगा ) यथास्थिति, केन्द्रीय सूचना आयोग या राज्य सूचना आयोग का विनिश्चय आबद्धकर होगा (८) अपने विनिश्चय में॰ यथास्थिति केन्द्रीय सूच"
+        },
+        {
+          "rank": 2,
+          "score": 0.5941,
+          "act": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)",
+          "section": "Section 30",
+          "page": 10,
+          "source": "rti_act_2005_hi.pdf",
+          "text_preview": "क अधिनियमन के सौ दिन क भीतर किसी अधिकारी को प्रत्येक उपमंडल स्तर या अन्य उप जिला स्तर पर यथास्थिति केंद्रीय सहायक लोक सूचना अधिकारी या किसी राज्य सहायक लोक सूचना अधिकारी के रूप में इस अधिनियम के अधीन सूचना के लिए आवेदन या अपील प्राप्त करने और उसे तत्काल यथास्थिति कंद्रीय लोक सूचना अधिकारी या राज्य ल"
+        },
+        {
+          "rank": 3,
+          "score": 0.5923,
+          "act": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)",
+          "section": "Section ७",
+          "page": 11,
+          "source": "rti_act_2005_hi.pdf",
+          "text_preview": "७ . अनुरोध का निपटारा १ धारा 5 की उपधारा (२ के परंतुक याधारा 6 की उपधारां (३) के परंतुक के अधीन रहते हुए धारा 6 क अधीन अनुरोध के प्राप्त होने पर यथास्थिति केन्द्रीय लोक सूचना अधिकारी या राज्य लोक सूचना अधिकारी, यथासंभवशीघ्रता से॰ और किसी भी दशा में अनुरोध की प्राप्ति क तीस दिन के भीतर ऐसी फीस क संदा"
+        },
+        {
+          "rank": 4,
+          "score": 0.5635,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 19",
+          "page": 20,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "prove that a denial of a request was justified shall be on the Central Public Information Officer or State Public Information Officer, as the case may be, who denied the request. (6) An appeal under sub-section (/) or sub-section (2) shall be disposed of within thirty days of the receipt of the appe"
+        },
+        {
+          "rank": 5,
+          "score": 0.551,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 7",
+          "page": 10,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "7. Disposal of request.—(/) Subject to the proviso to sub-section (2) of section 5 or the proviso to sub-section (3) of section 6, the Central Public Information Officer or State Public Information Officer, as the case may be, on receipt of a request under section 6 shall, as expeditiously as possib"
+        }
+      ],
+      "answer": "RTI अर्ज कसा दाखल करायचा आणि किती दिवसांत उत्तर मिळते?\n\nRTI अधिनियम, 2005 (सूचना का अधिकार अधिनियम, 2005) या अधिनियमाचा सूचना तक पहुंच उपलब्ध कराना आणि अपील या अधिनियमाचा अधीन उपाय देना आहे. त्याचा अधिकारी आणि उपाय देने पर्यंत तीनावी दिवसांत उत्तर मिळेल. त्यांनी त्यांचा अधिकार आणि उपाय देत आणि त्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे. त्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे असे तीनावी दिवसांत उत्तर मिळेल. त्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे असे तीनावी दिवसांत उत्तर मिळेल. त्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे असे तीनावी दिवसांत उत्तर मिळेल.\n\nत्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे असे तीनावी दिवसांत उत्तर मिळेल. त्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे असे तीनावी दिवसांत उत्तर मिळेल. त्यांनी त्यांचा अनुरोध तक पहुंच उपलब्ध करावा शकत आहे असे ती",
+      "generation": {
+        "answer_chars": 834,
+        "keywords_expected": [],
+        "keywords_found": [],
+        "keyword_coverage": null,
+        "cites_section": false,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.986
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "rti-06",
+      "question": "सूचना का अधिकार अधिनियम के तहत जानकारी न मिलने पर अपील कहाँ करें?",
+      "type": "in_scope",
+      "language": "hi",
+      "classified_vertical": "rti",
+      "expected_vertical": "rti",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "rti",
+        "vertical_filter_applied": "rti",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.6763,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.31,
+        "retrieve": 2.27,
+        "generate": 51.34
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "rti_act_2005_hi.pdf",
+          "rti_act_2005_hi.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_en.pdf",
+          "rti_act_2005_hi.pdf"
+        ],
+        "retrieved_sections": [
+          "17",
+          "30",
+          "७"
+        ],
+        "source_hit": true,
+        "section_hit": false,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.6763
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.6763,
+          "act": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)",
+          "section": "Section ७",
+          "page": 19,
+          "source": "rti_act_2005_hi.pdf",
+          "text_preview": "उसका यह समादान हा जात्ता है कि अपीलार्थी समय परअपील फाइल करने से पर्याप्त कारण से निवारित किया गया था सूचना का अधिकार अधिनियम, २००५ अध्याय 5 सूचना आयोगों की शक्तियां और कृत्य अपील तथा शास्तियां ) ८४ ) यदि यथास्थिति केन्द्रीय लोक सूचना अधिकारी या राज्य लोक सूचना अधिकारी का विनिश्चय जिसके विरुद्घ अपील"
+        },
+        {
+          "rank": 2,
+          "score": 0.6752,
+          "act": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)",
+          "section": "Section ७",
+          "page": 11,
+          "source": "rti_act_2005_hi.pdf",
+          "text_preview": "किए गए अभ्यावेदन को ध्यान में रखेगा ८) जहां, किसी अनुरोध को उपधारा १) के अधीन अस्वीकृत किया गया है॰ वंहां थथ्नास्थिति केन्द्रीय लोक सूचना अधिकारी या राज्य लोक सूचना अधिकारी अनुरोध करने चाले व्यक्ति को - ६i) ऐसी अस्वीकृति के लिए कारण (ii) वह अवधि, जिसके भीतर ऐसी अस्वीकृति क विरुद्ध कोई अपील की जा समे"
+        },
+        {
+          "rank": 3,
+          "score": 0.664,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 17",
+          "page": 18,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "otherwise than as a member and in common with the other members of an incorporated company, he shall, for the purposes of sub-section (1), be deemed to be guilty of misbehaviour. CHAPTER V POWERS AND FUNCTIONS OF THE INFORMATION COMMISSIONS, APPEAL AND PENALTIES 18. Powers and 'Unctions of Informati"
+        },
+        {
+          "rank": 4,
+          "score": 0.6562,
+          "act": "The Right to Information Act, 2005",
+          "section": "Section 17",
+          "page": 18,
+          "source": "rti_act_2005_en.pdf",
+          "text_preview": "under this Act, or because the Central Assistant Public Information Officer or State Assistant Public Information Officer, as the case may be, has refused to accept his or her application for information or appeal under this Act for forwarding tbe same to the Central Public Information Officer or St"
+        },
+        {
+          "rank": 5,
+          "score": 0.6524,
+          "act": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)",
+          "section": "Section 30",
+          "page": 10,
+          "source": "rti_act_2005_hi.pdf",
+          "text_preview": "सहायता प्रदान करेगा और इस अधिनियम के उपबंधों क किसी उल्लंघन क प्रयोजनों के लिए ऐसे अन्य अधिकारी को॰ यथास्थिति केन्द्रीय लोक सूचना अधिकारी या राज्य लोक सूचना अधिकारी सनझा जाएगा 6. सूचना अभिप्राप्त करने क लिए अनुरोध-१) कोई व्यक्ति जो इस अधिनियम के अधीन कोई सूचना अभिप्राप्त करना चाहता है॰ लिखित में या "
+        }
+      ],
+      "answer": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi) — Section ७, page 19 के अनुसार, अपीलार्थी जब सूचना का अधिकार अधिनियम, 2005 के तहत सूचना न मिलती है तो, वे अपने विनिवारित किये गए अभ्यावेदन के तहत केन्द्रीय लोक सूचना अधिकारी या राज्य लोक सूचना अधिकारी की शक्तियों के अधीन अपील कर सकते हैं। यदि वे अनुरोध करने चाहते हैं तो, वे अपने अनुरोध को यथास्थिति केन्द्रीय लोक सूचना अधिकारी या राज्य लोक सूचना अधिकारी के विनिश्चय के लिए लिखित अभ्यावेदन कर सकते हैं। यदि अनुरोध अस्वीकृत हो जाता है तो, वे अनुरोध से विरुद्ध किये गए अपील की विशिष्टियां विनिर्दिष्ट कर सकते हैं।\n\nसूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi) — Section ७, page 11 के अनुसार, अपीलार्थी जब सूचना का अधिकार अधिनियम, 2005 के तहत सूचना न मिलती है तो, वे अपने विनिवारित किये गए अभ्यावेदन के तहत केन्द्रीय लोक सूचना अधिकारी या राज्य लोक सूचना अधिकारी की शक्तियों के अधीन अपील कर सकते हैं। यदि वे अनुरोध करने चाहते हैं तो, वे",
+      "generation": {
+        "answer_chars": 881,
+        "keywords_expected": [],
+        "keywords_found": [],
+        "keyword_coverage": null,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.897
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "ten-01",
+      "question": "My landlord is refusing to return my security deposit after I vacated the flat. What does the law say?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "tenancy",
+      "expected_vertical": "tenancy",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "tenancy",
+        "vertical_filter_applied": "tenancy",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.6566,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 3.07,
+        "generate": 14.33
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "model_tenancy_act_2021.pdf",
+          "model_tenancy_act_2021.pdf",
+          "mh_rent_control_1999.pdf",
+          "model_tenancy_act_2021.pdf",
+          "model_tenancy_act_2021.pdf"
+        ],
+        "retrieved_sections": [
+          "11",
+          "15",
+          "22"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.6566
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.6566,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 11",
+          "page": 8,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "11. (1) The security deposit to b e paid by the tenant in advance shall be such as may be agreed upon between the landlord and the tenant in the tenancy agreement, which shall –– Restriction on sub-letting. Rent payable. Revision of rent. Rent Authority to determine the revised rent in case of dispu"
+        },
+        {
+          "rank": 2,
+          "score": 0.6224,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 15",
+          "page": 10,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "inhabitable: Provided that where the rented premises becomes uninhabitable as specified in sub-section (5) or this sub-section and the landlord Repair and maintenance of property. WWW.LIVELAW.IN fails to carry out the required repairs to make it inhabitable or the said premises could not be made inh"
+        },
+        {
+          "rank": 3,
+          "score": 0.6193,
+          "act": "The Maharashtra Rent Control Act, 1999",
+          "section": "Section 11",
+          "page": 19,
+          "source": "mh_rent_control_1999.pdf",
+          "text_preview": "with the vouchers maintained by the tenants shall be conclusive evidence of such expenditure and shall be binding on the landlord. CHAPTER III RELIEF AGAINST FORFEITURE 15. (1) A_ landlord shall not be entitled to the recovery of No ejectment possession of any premises SO long as the tenant pays, or"
+        },
+        {
+          "rank": 4,
+          "score": 0.6151,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 22",
+          "page": 2,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "22. Eviction and recovery of possession of premises in case of death of landlord. 23. Enhancement of rent in case of refusal by tenant to vacate."
+        },
+        {
+          "rank": 5,
+          "score": 0.6136,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 15",
+          "page": 10,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "with the landlord, the respective responsibilities of the tenant an d landlord to repair and maintain those facilities shall be such as may be specified in the tenancy agreement. (3) If the tenant fails or refuses to carry out the repairs referred to in sub-section (1) or sub-section (2), the landlo"
+        }
+      ],
+      "answer": "The law regarding the return of a security deposit after vacating the premises can be found in Section 11 of the Model Tenancy Act, 2021. According to this section, the security deposit to be paid by the tenant in advance shall not exceed two months' rent for residential premises and six months' rent for non-residential premises. Additionally, Section 11 of the Model Tenancy Act, 2021, states that the security deposit shall be refunded to the tenant on the date of taking over vacant possession of the premises from the tenant, after making due deduction of any liability of the tenant.\n\nIf the landlord is refusing to return the security deposit, you should first ensure that the premises have been vacated and that the landlord has not made any deductions from the deposit as per the provisions of the Model Tenancy Act, 2021. If the landlord has not made the required deductions and is still refusing to return the deposit, you should contact the local Consumer Disputes Redressal Forum or a local legal aid clinic for further assistance. They can provide guidance on how to proceed with the matter, including filing a complaint or seeking a legal opinion.",
+      "generation": {
+        "answer_chars": 1163,
+        "keywords_expected": [
+          "security deposit"
+        ],
+        "keywords_found": [
+          "security deposit"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "ten-02",
+      "question": "On what grounds can a landlord legally evict a tenant?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "tenancy",
+      "expected_vertical": "tenancy",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "tenancy",
+        "vertical_filter_applied": "tenancy",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.7193,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 1.44,
+        "generate": 18.72
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "model_tenancy_act_2021.pdf",
+          "model_tenancy_act_2021.pdf",
+          "mh_rent_control_1999.pdf",
+          "mh_rent_control_1999.pdf",
+          "mh_rent_control_1999.pdf"
+        ],
+        "retrieved_sections": [
+          "11",
+          "20",
+          "37"
+        ],
+        "source_hit": true,
+        "section_hit": false,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.7193
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.7193,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 20",
+          "page": 13,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "unless otherwise agreed to in writing by the landlord and tenant, except in accordance with the provisions of sub-section (2) or in accordance with the provisions of section 22. (2) The Rent Court may, on an application made to it by the landlord in such manner as may be prescribed, make an order fo"
+        },
+        {
+          "rank": 2,
+          "score": 0.6684,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 20",
+          "page": 13,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "eviction and recovery of possession of the premises on one or more of the following grounds, namely: - (a) that the tenant does not agree to pay the rent payable under section 8; (b) that the tenant has not paid the arrears of rent and other charges payable in full as specified in sub-section (1) of"
+        },
+        {
+          "rank": 3,
+          "score": 0.6633,
+          "act": "The Maharashtra Rent Control Act, 1999",
+          "section": "Section 37",
+          "page": 44,
+          "source": "mh_rent_control_1999.pdf",
+          "text_preview": "behalf; may evict that person from, and take possession of, the premises and deliver the sane to the landlord and for that purpose, use such force as may be necessary_ Pending 46. (1) Subject to sub-section (2), all suits and proceedings suits and proceedings filed by landlords, being the landlords "
+        },
+        {
+          "rank": 4,
+          "score": 0.6631,
+          "act": "The Maharashtra Rent Control Act, 1999",
+          "section": "Section 11",
+          "page": 25,
+          "source": "mh_rent_control_1999.pdf",
+          "text_preview": "just (10) A suit for eviction on the grounds specified in clauses (h), (i), (j) or (k) of sub-section (1) may be filed by the landlord jointly against all the tenants occupying the premises sought to be demolished."
+        },
+        {
+          "rank": 5,
+          "score": 0.6564,
+          "act": "The Maharashtra Rent Control Act, 1999",
+          "section": "Section 37",
+          "page": 42,
+          "source": "mh_rent_control_1999.pdf",
+          "text_preview": "of his employees under section 22 ; (6) a member of the armed forces of the Union or a scientist or a Government servant or a successor-in- interest, referred to in section 23; or (c) a person who has given premises on licence for residence or a successor-in- interest referred to in section 24. Spec"
+        }
+      ],
+      "answer": "A landlord can legally evict a tenant on the following grounds, as per the provisions of the Maharashtra Rent Control Act, 1999:\n\n- On the grounds specified in clauses (h), (i), (j) or (k) of sub-section (1) of Section 11, as provided in Section 11 of the Maharashtra Rent Control Act, 1999.\n- On the grounds specified in clauses (a), (b), and (c) of Section 22 of the Maharashtra Rent Control Act, 1999, as provided in Section 37 of the Maharashtra Rent Control Act, 1999.\n- On the grounds specified in clauses (a), (b), and (c) of Section 22 of the Maharashtra Rent Control Act, 1999, as provided in Section 37 of the Maharashtra Rent Control Act, 1999.\n- On the grounds specified in clauses (a), (b), and (c) of Section 23 of the Maharashtra Rent Control Act, 1999, as provided in Section 37 of the Maharashtra Rent Control Act, 1999.\n- On the grounds specified in clauses (a), (b), and (c) of Section 24 of the Maharashtra Rent Control Act, 1999, as provided in Section 37 of the Maharashtra Rent Control Act, 1999.\n\nThe landlord must submit an application to the Competent Authority, signed and verified in the manner provided in the rules, to evict the tenant, as per Section 37 of the Maharashtra Rent Control Act, 1999.",
+      "generation": {
+        "answer_chars": 1227,
+        "keywords_expected": [
+          "evict"
+        ],
+        "keywords_found": [
+          "evict"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "ten-03",
+      "question": "Does a rent agreement have to be in writing and does it need to be registered with any authority?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "tenancy",
+      "expected_vertical": "tenancy",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "tenancy",
+        "vertical_filter_applied": "tenancy",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.6581,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 1.58,
+        "generate": 8.29
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "model_tenancy_act_2021.pdf",
+          "mh_rent_control_1999.pdf",
+          "mh_rent_control_1999.pdf",
+          "model_tenancy_act_2021.pdf",
+          "model_tenancy_act_2021.pdf"
+        ],
+        "retrieved_sections": [
+          "2",
+          "35",
+          "37"
+        ],
+        "source_hit": true,
+        "section_hit": null,
+        "precision_at_k": 0.6,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.6581
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.6581,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 2",
+          "page": 6,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "the Rent Authority of the agreement to do so at the time of information of the tenancy agreement under section 4. Act not to apply to certain premises. CHAPTER II TENANCY 4. (1) Notwithstanding anything contained in this Act or any other law for the time being in force, no person shall, after the co"
+        },
+        {
+          "rank": 2,
+          "score": 0.6544,
+          "act": "The Maharashtra Rent Control Act, 1999",
+          "section": "Section 37",
+          "page": 46,
+          "source": "mh_rent_control_1999.pdf",
+          "text_preview": "and the tenant or the licensee, as the case may be, after the commencement of this Act, shall be in XVI writing and shall be registered under the Registration Act, of 1908 1908. 2000 : Mah: XVIII] Maharashtra Rent Control Act, 1999 11721 (2) The responsibility of getting such agreement registered sh"
+        },
+        {
+          "rank": 3,
+          "score": 0.6418,
+          "act": "The Maharashtra Rent Control Act, 1999",
+          "section": "Section 37",
+          "page": 46,
+          "source": "mh_rent_control_1999.pdf",
+          "text_preview": "thereof; and every partner of the firm shall unless he proves that the offence was committed without his knowledge or consent, be deemed' to be guilty of guch offence Tenancy 55. (1) Notwithstanding anything contained in this Act or agreement to be any other law for the time being in force, any agre"
+        },
+        {
+          "rank": 4,
+          "score": 0.6278,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 35",
+          "page": 19,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "not be disposed of within the said period of sixty days, the Rent Court or the Rent Tribunal shall record its reasons in writing for not disposing of the application or appeal within that period. (3) In every application or appeal, before the Rent Court or the Rent Tribunal, the evidence of a witnes"
+        },
+        {
+          "rank": 5,
+          "score": 0.6184,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 35",
+          "page": 18,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "35. (1) Save as provided in this section, nothing contained in the Code of Civil Procedure, 1908 shall apply to the Rent Courts and Rent Tribunals, which shall be guided by the principles of natural justice and shall have power to regulate their own procedure in the following manner, namely:–– (a) t"
+        }
+      ],
+      "answer": "Yes, a rent agreement must be in writing and must be registered with the Rent Authority, as per the Model Tenancy Act, 2021, Section 4. Additionally, under the Maharashtra Rent Control Act, 1999, Section 37, the agreement must be in writing and registered under the Registration Act, 1908. Therefore, both acts require that rent agreements be both written and registered.",
+      "generation": {
+        "answer_chars": 371,
+        "keywords_expected": [
+          "agreement"
+        ],
+        "keywords_found": [
+          "agreement"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "ten-04",
+      "question": "Can my landlord increase the rent whenever he wants, or does he have to give notice?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "tenancy",
+      "expected_vertical": "tenancy",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "tenancy",
+        "vertical_filter_applied": "tenancy",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.6751,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 1.13,
+        "generate": 13.61
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "mh_rent_control_1999.pdf",
+          "model_tenancy_act_2021.pdf",
+          "mh_rent_control_1999.pdf",
+          "mh_rent_control_1999.pdf",
+          "model_tenancy_act_2021.pdf"
+        ],
+        "retrieved_sections": [
+          "11",
+          "26",
+          "3",
+          "9"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.6751
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.6751,
+          "act": "The Maharashtra Rent Control Act, 1999",
+          "section": "Section 11",
+          "page": 19,
+          "source": "mh_rent_control_1999.pdf",
+          "text_preview": "permitted increases, if any, and observes and performs pays or is the other conditions of the tenancy, in S0 far as they are ready and consistent with the provisions of this Act. willing to pay standard: rent and permitted increases_ (2) No suit for recovery of possession shall be instituted by land"
+        },
+        {
+          "rank": 2,
+          "score": 0.6725,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 9",
+          "page": 8,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "9. (1) The revision of rent between the landlord and the tenant shall be in accordance with the terms of the tenancy agreement. (2) Where, after the commencement of tenancy, the landlord has entered into an agreement in writing with the tenant prior to the commencement of the work and has incurred e"
+        },
+        {
+          "rank": 3,
+          "score": 0.6718,
+          "act": "The Maharashtra Rent Control Act, 1999",
+          "section": "Section 11",
+          "page": 15,
+          "source": "mh_rent_control_1999.pdf",
+          "text_preview": "11. (1) After the commencement of this Act a landlord shall Increase in be entitled to make in rent an increase of 4 per cent, per annum annually the rent of the premises let for any of the purposes referred and on to in sub-section (1) of section 2_ account of iprovement Explanation.~For the purpos"
+        },
+        {
+          "rank": 4,
+          "score": 0.6582,
+          "act": "The Maharashtra Rent Control Act, 1999",
+          "section": "Section 3",
+          "page": 14,
+          "source": "mh_rent_control_1999.pdf",
+          "text_preview": "Control Act; 1999 [2000 Mah. XVIII (2) If there is any dispute between the landlord and the tenant regarding the amount of permitted increase, the court may determine such amount. (3) If any application for fixing the standard rent or for determining the permitted increase is made by tenant; (a) the"
+        },
+        {
+          "rank": 5,
+          "score": 0.6473,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 26",
+          "page": 16,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "the tenant refuses to allow the landlord to make such improvement or construct such additional structure, the landlord may make an application in this behalf to the Rent Court. (3) On an application made by the landlord under sub-section (2), if the Rent Court is satisfied that the landlord is ready"
+        }
+      ],
+      "answer": "Based on the provisions of the Maharashtra Rent Control Act, 1999, a landlord is not permitted to increase the rent unilaterally. The Act states in Section 11(1) that after the commencement of the Act, a landlord shall be entitled to make an increase in rent of 4% per annum annually for improvement or structural alterations of the premises which has been made with the consent of seventy per cent of the tenants given in writing. \n\nAdditionally, Section 3(2) of the Maharashtra Rent Control Act, 1999 states that if there is any dispute between the landlord and the tenant regarding the amount of permitted increase, the court may determine such amount. Therefore, the landlord must first seek the consent of the tenants and then proceed with the increase only after the court's determination of the amount. \n\nIn summary, the landlord must first obtain the consent of seventy per cent of the tenants and then seek court approval for any increase in rent. The landlord cannot increase the rent unilaterally.",
+      "generation": {
+        "answer_chars": 1008,
+        "keywords_expected": [
+          "rent"
+        ],
+        "keywords_found": [
+          "rent"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "ten-05",
+      "question": "मेरा मकान मालिक मेरी सिक्योरिटी डिपॉजिट वापस नहीं कर रहा है, मैं क्या कर सकता हूँ?",
+      "type": "in_scope",
+      "language": "hi",
+      "classified_vertical": "tenancy",
+      "expected_vertical": "tenancy",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "tenancy",
+        "vertical_filter_applied": "tenancy",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.5596,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.26,
+        "retrieve": 1.58,
+        "generate": 32.82
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "model_tenancy_act_2021.pdf",
+          "model_tenancy_act_2021.pdf",
+          "model_tenancy_act_2021.pdf",
+          "mh_rent_control_1999.pdf",
+          "mh_rent_control_1999.pdf"
+        ],
+        "retrieved_sections": [
+          "11",
+          "15"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.5596
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.5596,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 11",
+          "page": 8,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "11. (1) The security deposit to b e paid by the tenant in advance shall be such as may be agreed upon between the landlord and the tenant in the tenancy agreement, which shall –– Restriction on sub-letting. Rent payable. Revision of rent. Rent Authority to determine the revised rent in case of dispu"
+        },
+        {
+          "rank": 2,
+          "score": 0.5358,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 15",
+          "page": 10,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "with the landlord, the respective responsibilities of the tenant an d landlord to repair and maintain those facilities shall be such as may be specified in the tenancy agreement. (3) If the tenant fails or refuses to carry out the repairs referred to in sub-section (1) or sub-section (2), the landlo"
+        },
+        {
+          "rank": 3,
+          "score": 0.5332,
+          "act": "The Model Tenancy Act, 2021",
+          "section": "Section 15",
+          "page": 10,
+          "source": "model_tenancy_act_2021.pdf",
+          "text_preview": "inhabitable: Provided that where the rented premises becomes uninhabitable as specified in sub-section (5) or this sub-section and the landlord Repair and maintenance of property. WWW.LIVELAW.IN fails to carry out the required repairs to make it inhabitable or the said premises could not be made inh"
+        },
+        {
+          "rank": 4,
+          "score": 0.5236,
+          "act": "The Maharashtra Rent Control Act, 1999",
+          "section": "Section 11",
+          "page": 19,
+          "source": "mh_rent_control_1999.pdf",
+          "text_preview": "permitted increases, if any, and observes and performs pays or is the other conditions of the tenancy, in S0 far as they are ready and consistent with the provisions of this Act. willing to pay standard: rent and permitted increases_ (2) No suit for recovery of possession shall be instituted by land"
+        },
+        {
+          "rank": 5,
+          "score": 0.5169,
+          "act": "The Maharashtra Rent Control Act, 1999",
+          "section": "Section 11",
+          "page": 19,
+          "source": "mh_rent_control_1999.pdf",
+          "text_preview": "with the vouchers maintained by the tenants shall be conclusive evidence of such expenditure and shall be binding on the landlord. CHAPTER III RELIEF AGAINST FORFEITURE 15. (1) A_ landlord shall not be entitled to the recovery of No ejectment possession of any premises SO long as the tenant pays, or"
+        }
+      ],
+      "answer": "मेरा मकान मालिक मेरी सिक्योरिटी डिपॉजिट वापस नहीं कर रहा है, मैं कैसे कर सकता हूँ? (The Model Tenancy Act, 2021, Section 11)\n\nमेरा विवरण यहाँ दिया गया है: अगर मैं सिक्योरिटी डिपॉजिट को वापस नहीं कर रहा है, मैं एक नोट बनाकर मालिक को यह बताना चाहता हूँ कि मैं वापस देने के लिए अनुरोध किया है। यदि यह नोट नहीं रिकॉर्ड किया जाता है, तो मैं एक विश्लेषण करने के लिए अनुरोध दे सकता हूँ। यदि वापस नहीं दिया जाता है, तो मैं अनुरोध के बाद एक विश्लेषण कर सकता हूँ और यदि वापस नहीं दिया जाता है, तो मैं एक नियमित रूप से अनुरोध के बाद एक विश्लेषण कर सकता हूँ। यह अनुरोध एक विश्लेषण के बाद एक नियमित रूप से दिया जाएगा। (The Model Tenancy Act, 2021, Section 11)",
+      "generation": {
+        "answer_chars": 646,
+        "keywords_expected": [],
+        "keywords_found": [],
+        "keyword_coverage": null,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.841
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "con-01",
+      "question": "I bought a defective washing machine online and the seller refuses to refund me. Where can I file a complaint?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "consumer",
+      "expected_vertical": "consumer",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "consumer",
+        "vertical_filter_applied": "consumer",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.5677,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 2.02,
+        "generate": 13.39
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf"
+        ],
+        "retrieved_sections": [
+          "101",
+          "17",
+          "35",
+          "38",
+          "81"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.5677
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.5677,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 17",
+          "page": 13,
+          "source": "cpa_2019.pdf",
+          "text_preview": "17. A complaint relating to violation of consumer rights or unfair trade practices or false or misleading advertisements which are prejudicial to the interests of consumers as a class, may be forwarded either in writing or in electronic mode, to any one of the authorities, namely, the District Colle"
+        },
+        {
+          "rank": 2,
+          "score": 0.5554,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 81",
+          "page": 31,
+          "source": "cpa_2019.pdf",
+          "text_preview": "or the State Commission or the National Commission, as the case may be, shall continue to hear all the issues involved in such consumer dispute. CHAPTER VI PRODUCT LIABILITY 82. This Chapter shall apply to every claim for compensation under a product liability action by a complainant for any harm ca"
+        },
+        {
+          "rank": 3,
+          "score": 0.5474,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 35",
+          "page": 18,
+          "source": "cpa_2019.pdf",
+          "text_preview": "35. (1) A complaint, in relation to any goods sold or delivered or agreed to be sold or delivered or any service provided or agreed to be provided, may be filed with a District Commission by— (a) the consumer,— (i) to whom such goods are sold or delivered or agreed to be sold or delivered or such se"
+        },
+        {
+          "rank": 4,
+          "score": 0.5426,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 101",
+          "page": 36,
+          "source": "cpa_2019.pdf",
+          "text_preview": "to entertain complaints under proviso to sub-section (1) of section 34; (p) the manner of electronically filing complaint under the proviso to sub-section (1) of section 35; (q) the fee, electronic form and the manner of payment of fee for filing complaint under sub-section (2) of section 35; (r) th"
+        },
+        {
+          "rank": 5,
+          "score": 0.5377,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 38",
+          "page": 19,
+          "source": "cpa_2019.pdf",
+          "text_preview": "to take any action to represent his case within the time given by the District Commission, proceed to settle the consumer dispute in the manner specified in clauses (c) to (g); (c) if the complaint alleges a defect in the goods which cannot be determined without proper analysis or test of the goods,"
+        }
+      ],
+      "answer": "You can file a complaint with the District Collector or the Commissioner of the regional office, as these are the authorities mentioned in the Consumer Protection Act, 2019, under Section 17.\n\nAdditionally, you can also file a complaint with the Central Authority, as mentioned in the same section. This will allow you to forward your complaint relating to the violation of consumer rights or unfair trade practices, which is prejudicial to your interests as a consumer.\n\nFurthermore, you can seek assistance from a recognized consumer association, such as the one you mentioned, to file your complaint. If you are a member of such an association, you can file the complaint on your behalf or on behalf of the consumer who is a member of the association.\n\nIf you have already tried to resolve the issue through mediation, you can file a complaint with the State Commission or the National Commission, as the case may be, under Section 82 of the Consumer Protection Act, 2019, to continue hearing all the issues involved in the consumer dispute related to the defective washing machine.",
+      "generation": {
+        "answer_chars": 1085,
+        "keywords_expected": [
+          "District Commission"
+        ],
+        "keywords_found": [],
+        "keyword_coverage": 0.0,
+        "cites_section": true,
+        "grounded": false,
+        "unsupported_sections": [
+          "82"
+        ],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "con-02",
+      "question": "What is the time limit for filing a consumer complaint after the problem occurs?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "consumer",
+      "expected_vertical": "consumer",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "consumer",
+        "vertical_filter_applied": "consumer",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.673,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 1.68,
+        "generate": 9.16
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf"
+        ],
+        "retrieved_sections": [
+          "38",
+          "81"
+        ],
+        "source_hit": true,
+        "section_hit": false,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.673
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.673,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 81",
+          "page": 31,
+          "source": "cpa_2019.pdf",
+          "text_preview": "81. (1) The District Commission or the State Commission or the National Commission, as the case may be, shall, within seven days of the receipt of the settlement report, pass suitable order recording such settlement of consumer dispute and dispose of the matter accordingly. (2) Where the consumer di"
+        },
+        {
+          "rank": 2,
+          "score": 0.6686,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 38",
+          "page": 19,
+          "source": "cpa_2019.pdf",
+          "text_preview": "to take any action to represent his case within the time given by the District Commission, proceed to settle the consumer dispute in the manner specified in clauses (c) to (g); (c) if the complaint alleges a defect in the goods which cannot be determined without proper analysis or test of the goods,"
+        },
+        {
+          "rank": 3,
+          "score": 0.6634,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 38",
+          "page": 19,
+          "source": "cpa_2019.pdf",
+          "text_preview": "mentioned in the complaint directing him to give his version of the case within a period of thirty days or such extended period not exceeding fifteen days as may be granted by it; (b) if the opposite party on receipt of a complaint referred to him under clause (a) denies or disputes the allegations "
+        },
+        {
+          "rank": 4,
+          "score": 0.6269,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "N/A",
+          "page": 10,
+          "source": "cpa_2019.pdf",
+          "text_preview": "refund the consideration thereof, if paid, within the period stipulated in the bill or cash memo or receipt or in the absence of such stipulation, within a period of thirty days; (ix) disclosing to other person any personal information given in confidence by the consumer unless such disclosure is ma"
+        },
+        {
+          "rank": 5,
+          "score": 0.6171,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 81",
+          "page": 31,
+          "source": "cpa_2019.pdf",
+          "text_preview": "or the State Commission or the National Commission, as the case may be, shall continue to hear all the issues involved in such consumer dispute. CHAPTER VI PRODUCT LIABILITY 82. This Chapter shall apply to every claim for compensation under a product liability action by a complainant for any harm ca"
+        }
+      ],
+      "answer": "The time limit for filing a consumer complaint after the problem occurs is not explicitly stated in the provided context passages. To determine the exact time limit, you would need to consult the full text of the Consumer Protection Act, 2019, which is not included in the given excerpts.\n\nHowever, based on general provisions of consumer protection laws, the time limit for filing a complaint typically starts from the date the consumer becomes aware of the problem or damage. For specific details, it is advisable to consult a lawyer or a local legal aid clinic for guidance on the current provisions of the Consumer Protection Act, 2019.",
+      "generation": {
+        "answer_chars": 640,
+        "keywords_expected": [
+          "two years"
+        ],
+        "keywords_found": [],
+        "keyword_coverage": 0.0,
+        "cites_section": false,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "con-03",
+      "question": "Who counts as a consumer under the Consumer Protection Act?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "consumer",
+      "expected_vertical": "consumer",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "consumer",
+        "vertical_filter_applied": "consumer",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.6663,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 1.49,
+        "generate": 11.82
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf"
+        ],
+        "retrieved_sections": [
+          "35",
+          "9"
+        ],
+        "source_hit": true,
+        "section_hit": null,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.6663
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.6663,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "N/A",
+          "page": 1,
+          "source": "cpa_2019.pdf",
+          "text_preview": "Short title, extent, commencement and application. THE CONSUMER PROTECTION ACT, 2019 NO. 35 OF 2019 [9th August, 2019.] An Act to provide for protection of the interests of consumers and for the said purpose, to establish authorities for timely and effective administration and settlement of consumer"
+        },
+        {
+          "rank": 2,
+          "score": 0.6513,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "N/A",
+          "page": 1,
+          "source": "cpa_2019.pdf",
+          "text_preview": "as follows:— CHAPTER I PRELIMINARY 1. (1) This Act may be called the Consumer Protection Act, 2019. (2) It extends to the whole of India except the State of Jammu and Kashmir. (3) It shall come into force on such date as the Central Government may, by notification, appoint and different dates may be"
+        },
+        {
+          "rank": 3,
+          "score": 0.5957,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 9",
+          "page": 11,
+          "source": "cpa_2019.pdf",
+          "text_preview": "9. The objects of every District Council shall be to render advice on promotion and protection of consumer rights under this Act within the district. CHAPTER III CENTRAL CONSUMER PROTECTION AUTHORITY 10. (1) The Central Government shall, by notification, establish with effect from such date as it ma"
+        },
+        {
+          "rank": 4,
+          "score": 0.5765,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 35",
+          "page": 18,
+          "source": "cpa_2019.pdf",
+          "text_preview": "delivered or such service is provided or agreed to be provided, or who alleges unfair trade practice in respect of such goods or service, is a member of such association or not; (c) one or more consumers, where there are numerous consumers having the same interest, with the permission of the Distric"
+        },
+        {
+          "rank": 5,
+          "score": 0.563,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 9",
+          "page": 11,
+          "source": "cpa_2019.pdf",
+          "text_preview": "and false or misleading advertisements which are prejudicial to the interests of public and consumers and to promote, protect and enforce the rights of consumers as a class. (2) The Central Authority shall consist of a Chief Commissioner and such number of other Commissioners as may be prescribed, t"
+        }
+      ],
+      "answer": "Under the Consumer Protection Act, 2019, Section 35, a person can file a complaint if they are a member of a recognized consumer association or if they are one or more consumers, with the permission of the District Commission, on behalf of, or for the benefit of, all consumers so interested. Additionally, the Central Government, the Central Authority, or the State Government, as the case may be, can also file a complaint. A recognized consumer association, as defined in Section 9, means any voluntary consumer association registered under any law for the time being in force. Therefore, a consumer under the Act is anyone who meets one of these criteria and is aggrieved by unfair trade practices or false or misleading advertisements that harm the interests of the public and consumers. To file a complaint, one must ensure they meet the criteria and file the complaint either in writing or electronically in such manner as may be prescribed.",
+      "generation": {
+        "answer_chars": 948,
+        "keywords_expected": [
+          "consumer"
+        ],
+        "keywords_found": [
+          "consumer"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "con-04",
+      "question": "What does deficiency in service mean and can I claim compensation for it?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "consumer",
+      "expected_vertical": "consumer",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "consumer",
+        "vertical_filter_applied": "consumer",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.6142,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 1.32,
+        "generate": 18.4
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf"
+        ],
+        "retrieved_sections": [
+          "39",
+          "81",
+          "85"
+        ],
+        "source_hit": true,
+        "section_hit": null,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.6142
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.6142,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "N/A",
+          "page": 4,
+          "source": "cpa_2019.pdf",
+          "text_preview": "express or implied or as is claimed by the trader in any manner whatsoever in relation to any goods or product and the expression \"defective\" shall be construed accordingly; (11) \"deficiency\" means any fault, imperfection, shortcoming or inadequacy in the quality, nature and manner of performance wh"
+        },
+        {
+          "rank": 2,
+          "score": 0.5765,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 81",
+          "page": 31,
+          "source": "cpa_2019.pdf",
+          "text_preview": "or the State Commission or the National Commission, as the case may be, shall continue to hear all the issues involved in such consumer dispute. CHAPTER VI PRODUCT LIABILITY 82. This Chapter shall apply to every claim for compensation under a product liability action by a complainant for any harm ca"
+        },
+        {
+          "rank": 3,
+          "score": 0.5764,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 85",
+          "page": 32,
+          "source": "cpa_2019.pdf",
+          "text_preview": "85. A product service provider shall be liable in a product liability action, if— (a) the service provided by him was faulty or imperfect or deficient or inadequate in quality, nature or manner of performance which is required to be provided by or under any law for the time being in force, or pursua"
+        },
+        {
+          "rank": 4,
+          "score": 0.5755,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "N/A",
+          "page": 4,
+          "source": "cpa_2019.pdf",
+          "text_preview": "of goods, products or services at competitive prices; (iv) the right to be heard and to be assured that consumer's interests will receive due consideration at appropriate fora; (v) the right to seek redressal against unfair trade practice or restrictive trade practices or unscrupulous exploitation o"
+        },
+        {
+          "rank": 5,
+          "score": 0.5454,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 39",
+          "page": 21,
+          "source": "cpa_2019.pdf",
+          "text_preview": "(c) to return to the complainant the price, or, as the case may be, the charges paid by the complainant along with such interest on such price or charges as may be decided; (d) to pay such amount as may be awarded by it as compensation to the consumer for any loss or injury suffered by the consumer "
+        }
+      ],
+      "answer": "Deficiency in service, as defined in the Consumer Protection Act, 2019, Section 82, means any fault, imperfection, shortcoming, or inadequacy in the quality, nature, or manner of performance which is required to be maintained by or under any law for the time being in force or has been undertaken to be performed by a person in pursuance of a contract or otherwise in relation to any service. This includes any act of negligence or omission or commission by such person which causes loss or injury to the consumer, or deliberate withholding of relevant information by such person to the consumer.\n\nYes, you can claim compensation for deficiency in service. According to Section 85 of the Consumer Protection Act, 2019, a product service provider is liable in a product liability action if the service provided was faulty, imperfect, deficient, or inadequate in quality, nature, or manner of performance, which is required to be provided by or under any law for the time being in force, or pursuant to any contract, express or implied, or as is claimed by the trader in any manner whatsoever in relation to any service. Additionally, if there was an act of omission or commission or negligence or conscious withholding any information which caused harm, or if the service provider did not issue adequate instructions or warnings to prevent any harm, or if the service did not conform to express warranty or the terms and conditions of the contract, you can claim compensation. For such claims, you can seek redressal through the District Commission, which may award compensation, punitive damages, or other remedies as provided in the Act.",
+      "generation": {
+        "answer_chars": 1638,
+        "keywords_expected": [
+          "deficiency"
+        ],
+        "keywords_found": [
+          "deficiency"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": false,
+        "unsupported_sections": [
+          "82"
+        ],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "con-05",
+      "question": "Is misleading advertising punishable under consumer law in India?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "rti",
+      "expected_vertical": "consumer",
+      "vertical_correct": false,
+      "diagnostics": {
+        "classified_vertical": "rti",
+        "vertical_filter_applied": "rti",
+        "fallback_to_full_collection": true,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.7056,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 1.52,
+        "generate": 10.3
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf",
+          "cpa_2019.pdf"
+        ],
+        "retrieved_sections": [
+          "21",
+          "39",
+          "89",
+          "91"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.7056
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.7056,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 89",
+          "page": 33,
+          "source": "cpa_2019.pdf",
+          "text_preview": "89. Any manufacturer or service provider who causes a false or misleading advertisement to be made which is prejudicial to the interest of consumers shall be punished with imprisonment for a term which may extend to two years and with fine which may extend to ten lakh rupees; and for every subsequen"
+        },
+        {
+          "rank": 2,
+          "score": 0.659,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 39",
+          "page": 21,
+          "source": "cpa_2019.pdf",
+          "text_preview": "of the value of such defective goods sold or service provided, as the case may be, to such consumers; Findings of District Commission. 45 of 1860. 2 of 1974. 5 of 1908. 5 of 1908. 22 THE GAZETTE OF INDIA EXTRAORDINARY [P ART II— (l) to issue corrective advertisement to neutralise the effect of misle"
+        },
+        {
+          "rank": 3,
+          "score": 0.658,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 21",
+          "page": 14,
+          "source": "cpa_2019.pdf",
+          "text_preview": "or advertiser or publisher, as the case may be, to discontinue such advertisement or to modify the same in such manner and within such time as may be specified in that order. (2) Notwithstanding the order passed under sub-section (1), if the Central Authority is of the opinion that it is necessary t"
+        },
+        {
+          "rank": 4,
+          "score": 0.6489,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 21",
+          "page": 14,
+          "source": "cpa_2019.pdf",
+          "text_preview": "or to other Regulator. Power of Central Authority to recall goods, etc. Power of Central Authority to issue directions and penalties against false or misleading advertisements. Provided that the Central Authority may, for every subsequent contravention, prohibit such endorser from making endorsement"
+        },
+        {
+          "rank": 5,
+          "score": 0.6299,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 91",
+          "page": 33,
+          "source": "cpa_2019.pdf",
+          "text_preview": "distributing or importing products containing adulterant. Punishment for manufacturing for sale or for storing or selling or distributing or importing spurious goods. 45 of 1860. 34 THE GAZETTE OF INDIA EXTRAORDINARY [P ART II— (b) causing injury resulting in grievous hurt to the consumer, with impr"
+        }
+      ],
+      "answer": "Yes, misleading advertising is punishable under the Consumer Protection Act, 2019. Section 89 of the Act states that any manufacturer or service provider who causes a false or misleading advertisement to be made which is prejudicial to the interest of consumers shall be punished with imprisonment for a term which may extend to two years and with a fine which may extend to ten lakh rupees. For every subsequent offense, they shall be punished with imprisonment for a term which may extend to five years and with a fine which may extend to fifty lakh rupees. Therefore, the person who causes misleading advertisements can be held accountable under the Consumer Protection Act, 2019.",
+      "generation": {
+        "answer_chars": 683,
+        "keywords_expected": [
+          "misleading"
+        ],
+        "keywords_found": [
+          "misleading"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "fam-01",
+      "question": "What is the procedure to claim maintenance from my husband after separation?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "family",
+      "expected_vertical": "family",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "family",
+        "vertical_filter_applied": "family",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.6084,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 1.52,
+        "generate": 31.62
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf"
+        ],
+        "retrieved_sections": [
+          "24",
+          "25",
+          "5",
+          "8",
+          "9"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.6084
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.6084,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 9",
+          "page": 8,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "wife is alive at the time of the presentation of the petition; or (ii) that the husband has, since the solemnization of the marriage, been guilty of rape, sodomy or 1[bestiality; or] 2[(iii) that in a suit under section 18 of the Hindu Adoptions and Maintenance Act, 1 956 (78 of 1956), or in a proce"
+        },
+        {
+          "rank": 2,
+          "score": 0.5493,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 25",
+          "page": 12,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "25. Permanent alimony and maintenance .—(1) Any court exercising jurisdiction under this Act may, at the time of passing any decree or at any time subsequent thereto, o n application made to it for the purpose by either the wife or the husband, as the case may be, order that the respondent shall 6* "
+        },
+        {
+          "rank": 3,
+          "score": 0.5492,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 5",
+          "page": 12,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "5. Ins. by Act 49 of 2001, s. 8 (w.e.f. 24-9-2001). 6. The words “while the applicant remains unmarried” omitted by Act 68 of 1976, s. 18 (w.e.f. 27-5-1976). the applicant for her or his maintenance and support such gross sum or such monthly or periodical sum for a term not exceeding the life of the"
+        },
+        {
+          "rank": 4,
+          "score": 0.5486,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 8",
+          "page": 5,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "in this section, the validity of any Hindu marriage shall in no way be affected by the omission to make the entry. RESTITUTION OF CONJUGAL RIGHTS AND JUDICIAL SEPARATION 9. Restitution of conjugal right.—5** * When either the husband or the wife has, without reasonable excuse, withdrawn from the soc"
+        },
+        {
+          "rank": 5,
+          "score": 0.5449,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 24",
+          "page": 12,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "24. Maintenance pendente lite and expenses of proceedings .—Where in any proceeding under this Act it appears to the court that either the wife or the husband, as the case may be, has no independent income sufficient for her or his support and the necessary expenses of the proceeding, it may, on the"
+        }
+      ],
+      "answer": "To claim maintenance from your husband after separation, you should follow these steps, as provided by the Hindu Marriage Act, 1955:\n\n1. **Application for Maintenance**: You can apply for maintenance to the district court by filing a petition. This application should be made on application made to it for the purpose by either the wife or the husband, as the case may be. (Section 24 of the Hindu Marriage Act, 1955)\n\n2. **Application for Maintenance Pendente Lite**: If the court finds that either the wife or the husband has no independent income sufficient for their support and the necessary expenses of the proceeding, the court can order the respondent to pay the expenses of the proceeding and monthly during the proceeding such sum as the court deems reasonable. (Section 24 of the Hindu Marriage Act, 1955)\n\n3. **Application for Permanent Alimony**: You can also apply for permanent alimony and maintenance at the time of passing any decree or at any time subsequent thereto. The court may order the respondent to pay a gross sum or a monthly or periodical sum for a term not exceeding the life of the applicant. (Section 25 of the Hindu Marriage Act, 1955)\n\n4. **Application for Restitution of Conjugal Rights**: If either the husband or the wife has withdrawn from the society of the other without reasonable excuse, the aggrieved party can apply for restitution of conjugal rights. The court may grant the application if it is satisfied of the truth of the statements made in the petition and that there is no legal ground why the application should not be granted. (Section 9 of the Hindu Marriage Act, 1955)\n\n5. **Consultation with a Lawyer**: It is advisable to consult a lawyer to ensure that your application is properly prepared and that all necessary documents are submitted. A lawyer can also help you understand the legal process and the court's decision-making process.\n\n6. **Follow Court Orders**: Once the court grants any of the above orders, you should follow the court's orders and ensure that the respondent complies with the maintenance or alimony orders. If the respondent does not comply, you can seek enforcement of the orders through the court.\n\n7. **Time Limits**: As per Section 24 of the Hindu Marriage Act, 1955, the application for the payment of the expenses of the proceeding and such monthly sum during the proceeding, shall, as far as possible, be disposed of within sixty days from the date of service of notice on the wife or the husband, as the case may be.\n\nConsulting a lawyer or a local legal aid clinic can provide you with more detailed guidance and support in this process.",
+      "generation": {
+        "answer_chars": 2625,
+        "keywords_expected": [
+          "maintenance"
+        ],
+        "keywords_found": [
+          "maintenance"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "fam-02",
+      "question": "What are the grounds on which a Hindu marriage can be dissolved by divorce?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "family",
+      "expected_vertical": "family",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "family",
+        "vertical_filter_applied": "family",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.7154,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 2.24,
+        "generate": 15.02
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf"
+        ],
+        "retrieved_sections": [
+          "13B",
+          "4",
+          "6",
+          "8"
+        ],
+        "source_hit": true,
+        "section_hit": false,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.7154
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.7154,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 6",
+          "page": 6,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "6. Subs. by s. 6, ibid., for “the grounds for a decree” (w.e.f. 27-5-1976). 13. Divorce.—(1) Any marriage solemnized, whether before or after the commencement of this Act, may, on a petition presented by either the husband or the wife, be dissolved by a decree of divorce on the ground that the other"
+        },
+        {
+          "rank": 2,
+          "score": 0.6356,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 13B",
+          "page": 8,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "13B. Divorce by mutual consent.—(1) Subject to the provisions of this Act a petition for dissolution of marriage by a decree of divorce may be presented to the district court by both the parties to a marriage together, whether such marriage was solemnized before or after the commencement of the Marr"
+        },
+        {
+          "rank": 3,
+          "score": 0.6306,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 4",
+          "page": 13,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "4. Subs. by Act 68 of 1976, s. 19 (w.e.f. 27-5-1976). 5. Subs. by Act 50 of 2003, s. 5, for “period of thirty days” (w.e.f. 23-12-2003). the fact that the parties thereto belonged to the same gotra or pravara or belonged to different religions, castes or sub-divisions of the same caste. (2) Nothing "
+        },
+        {
+          "rank": 4,
+          "score": 0.6242,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 4",
+          "page": 4,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "4. Overriding effect of Act.—Save as otherwise expressly provided in this Act,— (a) any text rule or interpretation of Hindu law or any custom or usage as part of that law in force immediately before the commencement of this Act shall cease to have effect with respect to any matter for which provisi"
+        },
+        {
+          "rank": 5,
+          "score": 0.6202,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 8",
+          "page": 5,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "in this section, the validity of any Hindu marriage shall in no way be affected by the omission to make the entry. RESTITUTION OF CONJUGAL RIGHTS AND JUDICIAL SEPARATION 9. Restitution of conjugal right.—5** * When either the husband or the wife has, without reasonable excuse, withdrawn from the soc"
+        }
+      ],
+      "answer": "According to Section 13 of the Hindu Marriage Act, 1955, a Hindu marriage can be dissolved by divorce on the following grounds:\n\n- The other party has, after the solemnization of the marriage, had voluntary sexual intercourse with any person other than his or her spouse (Section 13, Subsection 1, Clause (i)).\n- The other party has, after the solemnization of the marriage, treated the petitioner with cruelty (Section 13, Subsection 1, Clause (ia)).\n- The other party has deserted the petitioner for a continuous period of not less than two years immediately preceding the presentation of the petition (Section 13, Subsection 1, Clause (ib)).\n- The other party has ceased to be a Hindu by conversion to another religion (Section 13, Subsection 1, Clause (ii)).\n\nThese grounds allow either the husband or the wife to present a petition for a decree of divorce to the district court.",
+      "generation": {
+        "answer_chars": 883,
+        "keywords_expected": [
+          "divorce"
+        ],
+        "keywords_found": [
+          "divorce"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": false,
+        "unsupported_sections": [
+          "1",
+          "13"
+        ],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "fam-03",
+      "question": "Can my husband and I get a divorce by mutual consent, and how long do we have to wait?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "family",
+      "expected_vertical": "family",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "family",
+        "vertical_filter_applied": "family",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.6191,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 1.01,
+        "generate": 23.43
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf"
+        ],
+        "retrieved_sections": [
+          "13",
+          "13B",
+          "14",
+          "3"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.6191
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.6191,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 13B",
+          "page": 1,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "13B. Divorce by mutual consent. 14. No petition for divorce to be presented within one year of marriage. 15. Divorced persons when may marry again."
+        },
+        {
+          "rank": 2,
+          "score": 0.6185,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 13B",
+          "page": 8,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "13B. Divorce by mutual consent.—(1) Subject to the provisions of this Act a petition for dissolution of marriage by a decree of divorce may be presented to the district court by both the parties to a marriage together, whether such marriage was solemnized before or after the commencement of the Marr"
+        },
+        {
+          "rank": 3,
+          "score": 0.5809,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 13",
+          "page": 7,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "the dissolution of the marriage by a decree of divorce on the ground— (i) that there has been no resumption of cohabitation as between the parties to the marriage for a period of 9[one year] or upwards after the passing of a decree for judicial separation in a proceeding to which they were parties; "
+        },
+        {
+          "rank": 4,
+          "score": 0.5676,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 14",
+          "page": 9,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "any petition which may be brought after 3[expiration of the said one year] upon the same or substantially the same facts as those alleged in support of the petition so dismissed. (2) In disposing of any application under this section for leave to present a petition for divorce before the 4[expiratio"
+        },
+        {
+          "rank": 5,
+          "score": 0.5668,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 3",
+          "page": 12,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "clause ( iv), clause ( v), clause ( vi) or clause (vii) of sub-section (1) of section 13.] 2[(3) For the purpose of aiding the court in bringing about such reconciliation, the court may, if the parties so desire or if the court thinks it just and proper so to do, adjourn the proceedings for a reason"
+        }
+      ],
+      "answer": "Yes, you and your husband can get a divorce by mutual consent under the Hindu Marriage Act, 1955. Section 13B of the Act allows for a petition for dissolution of marriage by a decree of divorce to be presented to the district court by both parties if they have been living separately for a period of one year or more and have mutually agreed that the marriage should be dissolved. \n\nHowever, you must ensure that you do not present the petition within one year of your marriage. Section 14 of the Act states that no petition for divorce should be presented within one year of the marriage. If you decide to proceed with the mutual consent divorce, you should ensure that you do not present the petition within this one-year period after your marriage.\n\nFor the mutual consent divorce to be valid, you and your husband must have been living separately for a period of one year or more. Section 13B(1) of the Act outlines the conditions under which a petition for divorce by mutual consent can be presented. \n\nAdditionally, you should consult the court regarding the possibility of reconciliation. Section 13 of the Act provides for the court's role in aiding reconciliation. If you and your husband agree, the court may adjourn the proceedings for a reasonable period not exceeding fifteen days and refer the matter to any person named by you and your husband or nominated by the court. \n\nRemember, the court will also consider the interests of any children of the marriage and the question of whether there is a reasonable probability of a reconciliation before the expiration of the one-year period. Section 14 of the Act addresses this aspect, requiring the court to have regard to these factors when disposing of any application under this section.\n\nIt is advisable to consult a lawyer or a local legal aid clinic to ensure that all procedures are followed correctly and to understand the specific requirements and procedures for a mutual consent divorce under the Hindu Marriage Act, 1955.",
+      "generation": {
+        "answer_chars": 1993,
+        "keywords_expected": [
+          "mutual consent"
+        ],
+        "keywords_found": [
+          "mutual consent"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "fam-04",
+      "question": "My husband's family is harassing me at home. What protection can I get under the domestic violence law?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "family",
+      "expected_vertical": "family",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "family",
+        "vertical_filter_applied": "family",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.6192,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 1.03,
+        "generate": 27.82
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "dv_act_2005.pdf",
+          "dv_act_2005.pdf",
+          "dv_act_2005.pdf",
+          "dv_act_2005.pdf",
+          "dv_act_2005.pdf"
+        ],
+        "retrieved_sections": [
+          "1",
+          "10",
+          "11",
+          "18",
+          "9"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.6192
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.6192,
+          "act": "The Protection of Women from Domestic Violence Act, 2005",
+          "section": "Section 1",
+          "page": 4,
+          "source": "dv_act_2005.pdf",
+          "text_preview": "to the joint family of which the respondent is a member, irrespective of whether the respondent or the aggrieved person has any right, title or interest in the shared household; (t) “shelter home” means any shelter home as may be notified by the St ate Government to be as helter home for the purpose"
+        },
+        {
+          "rank": 2,
+          "score": 0.6105,
+          "act": "The Protection of Women from Domestic Violence Act, 2005",
+          "section": "Section 11",
+          "page": 7,
+          "source": "dv_act_2005.pdf",
+          "text_preview": "with law, home affairs including law and order, health and human resources to address issues of domestic violence is established and periodical review of the same is conducted; (d) protocols f or the various Ministries concerned with the delivery of services to women under this Act including the cou"
+        },
+        {
+          "rank": 3,
+          "score": 0.6066,
+          "act": "The Protection of Women from Domestic Violence Act, 2005",
+          "section": "Section 18",
+          "page": 8,
+          "source": "dv_act_2005.pdf",
+          "text_preview": "18. Protection orders. —The Magistrate may, after giving the aggrieved person and the respondent an opportunity of being heard and on being prima facie satisfied that domestic violence has taken place or is likely to take place, pass a protection o rder in favo ur of the aggrieved person a nd prohib"
+        },
+        {
+          "rank": 4,
+          "score": 0.6033,
+          "act": "The Protection of Women from Domestic Violence Act, 2005",
+          "section": "Section 9",
+          "page": 6,
+          "source": "dv_act_2005.pdf",
+          "text_preview": "of his report of having lodged the aggrieved person in a shelter home to the police station and the Magistrate having jurisdiction in the area where the shelter home is situated; (g) to get the aggrieved person medically examined, if she has sustained bodily injuries and forward a copy of the medica"
+        },
+        {
+          "rank": 5,
+          "score": 0.6022,
+          "act": "The Protection of Women from Domestic Violence Act, 2005",
+          "section": "Section 10",
+          "page": 6,
+          "source": "dv_act_2005.pdf",
+          "text_preview": "medically examined and forward a copy of the medical repot to the Protection Officer and the police st ation within the local limits of which the domestic violence took place; (c) ensure that the aggrieved person is provided shelter in a shelter home, if she so requires and forward a report of the l"
+        }
+      ],
+      "answer": "Under the Protection of Women from Domestic Violence Act, 2005, you can seek protection and relief from your husband's family's harassment. Here are the steps you can take:\n\nFirst, you should report the harassment to a Protection Officer. You can do this by presenting an application to the Magistrate seeking one or more reliefs under this Act. Before the Magistrate passes any order, you should take into consideration any domestic incident report received by him from the Protection Officer or the service provider. You can contact a Protection Officer who will ensure that you are medically examined and forward a copy of the medical report to the police station and the Magistrate having jurisdiction in the area where the domestic violence is alleged to have taken place (Section 12 of the Act).\n\nAdditionally, you can seek a protection order from the Magistrate. The Magistrate may pass a protection order in favor of the aggrieved person prohibiting the respondent from committing any act of domestic violence, aiding or abetting in the commission of acts of domestic violence, entering the place of employment of the aggrieved person, or attempting to communicate with the aggrieved person (Section 18 of the Act).\n\nFurthermore, you can seek the help of a service provider. The service provider can ensure that you are provided with shelter in a shelter home if you require it and forward a report of the lodging of the aggrieved person in the shelter home to the police station within the local limits of which the domestic violence took place (Section 10 of the Act).\n\nLastly, you can seek legal aid from a lawyer or a local legal aid clinic if you need further assistance or if you believe that your rights under the Act have been violated. It is important to consult with a legal expert to understand your rights and the steps you can take to protect yourself from further harassment (Section 9 of the Act).\n\nRemember, you have the right to seek protection and relief under the Protection of Women from Domestic Violence Act, 2005. It is advisable to consult a lawyer or a local legal aid clinic for further guidance and support.",
+      "generation": {
+        "answer_chars": 2142,
+        "keywords_expected": [
+          "protection order"
+        ],
+        "keywords_found": [
+          "protection order"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": false,
+        "unsupported_sections": [
+          "12"
+        ],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "fam-05",
+      "question": "Can I continue to live in my matrimonial home after filing a domestic violence case?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "family",
+      "expected_vertical": "family",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "family",
+        "vertical_filter_applied": "family",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.6082,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 3.85,
+        "generate": 18.0
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "dv_act_2005.pdf",
+          "dv_act_2005.pdf",
+          "dv_act_2005.pdf",
+          "dv_act_2005.pdf",
+          "dv_act_2005.pdf"
+        ],
+        "retrieved_sections": [
+          "1",
+          "10",
+          "19",
+          "2"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.6082
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.6082,
+          "act": "The Protection of Women from Domestic Violence Act, 2005",
+          "section": "Section 19",
+          "page": 8,
+          "source": "dv_act_2005.pdf",
+          "text_preview": "19. Residence orders.—(1) While disposing of an application under sub-section (1) of section12, the Magistrate may, on being satisfied that domestic violence has taken place, pass a residence order— (a) restraining the respondent from dispossessing or in any other manner disturbing the possession of"
+        },
+        {
+          "rank": 2,
+          "score": 0.5833,
+          "act": "The Protection of Women from Domestic Violence Act, 2005",
+          "section": "Section 2",
+          "page": 3,
+          "source": "dv_act_2005.pdf",
+          "text_preview": "granted in terms of section 21; (e) “domestic incident report ” means a report made in the prescribed form on receipt of a complaint of domestic violence from an aggrieved person; (f) “domestic relationship” means a relationship between two persons who live or have, at any point of time, lived toget"
+        },
+        {
+          "rank": 3,
+          "score": 0.5727,
+          "act": "The Protection of Women from Domestic Violence Act, 2005",
+          "section": "Section 1",
+          "page": 4,
+          "source": "dv_act_2005.pdf",
+          "text_preview": "to the joint family of which the respondent is a member, irrespective of whether the respondent or the aggrieved person has any right, title or interest in the shared household; (t) “shelter home” means any shelter home as may be notified by the St ate Government to be as helter home for the purpose"
+        },
+        {
+          "rank": 4,
+          "score": 0.5695,
+          "act": "The Protection of Women from Domestic Violence Act, 2005",
+          "section": "Section 10",
+          "page": 6,
+          "source": "dv_act_2005.pdf",
+          "text_preview": "medically examined and forward a copy of the medical repot to the Protection Officer and the police st ation within the local limits of which the domestic violence took place; (c) ensure that the aggrieved person is provided shelter in a shelter home, if she so requires and forward a report of the l"
+        },
+        {
+          "rank": 5,
+          "score": 0.5654,
+          "act": "The Protection of Women from Domestic Violence Act, 2005",
+          "section": "Section 1",
+          "page": 5,
+          "source": "dv_act_2005.pdf",
+          "text_preview": "ed person and her children, if any, stridhan, property, jointly or separately owned by the aggrieved person, payment of rental related to the shared house hold and maintenance; (b) disposal of household effects, any alienation of assets whether movable or immovable, valuables, shares, securities, bo"
+        }
+      ],
+      "answer": "Yes, you can continue to live in your matrimonial home after filing a domestic violence case. Section 19(1) of the Protection of Women from Domestic Violence Act, 2005, allows the Magistrate to pass a residence order restraining the respondent from dispossessing or disturbing your possession of the shared household. This order ensures that you can continue to live in the matrimonial home as long as the Magistrate is satisfied that domestic violence has taken place. Additionally, Section 19(1)(a) of the Act provides that the Magistrate may pass a residence order restraining the respondent from dispossessing or disturbing your possession of the shared household, whether or not the respondent has a legal or equitable interest in the shared household. Therefore, you can continue to live in your matrimonial home as long as the Magistrate grants such an order. However, it is important to follow the steps outlined in Section 10 of the Act, which requires service providers to ensure that the aggrieved person is provided shelter in a shelter home if she so requires.",
+      "generation": {
+        "answer_chars": 1073,
+        "keywords_expected": [
+          "residence"
+        ],
+        "keywords_found": [
+          "residence"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "fam-06",
+      "question": "पतीपासून वेगळे झाल्यानंतर पोटगी मिळवण्यासाठी काय करावे?",
+      "type": "in_scope",
+      "language": "mr",
+      "classified_vertical": "rti",
+      "expected_vertical": "family",
+      "vertical_correct": false,
+      "diagnostics": {
+        "classified_vertical": "rti",
+        "vertical_filter_applied": "rti",
+        "fallback_to_full_collection": true,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.5455,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.33,
+        "retrieve": 1.43,
+        "generate": 55.99
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf",
+          "hindu_marriage_act_1955.pdf"
+        ],
+        "retrieved_sections": [
+          "143",
+          "3",
+          "6",
+          "8"
+        ],
+        "source_hit": true,
+        "section_hit": false,
+        "precision_at_k": 0.6,
+        "mrr": 0.333,
+        "first_relevant_rank": 3,
+        "top_similarity": 0.5455
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.5455,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 143",
+          "page": 43,
+          "source": "bnss_2023.pdf",
+          "text_preview": "under this sub-section, order such person to make a monthly allowance for the interim maintenance of his wife or such child, father or mother, and the expenses of such proceeding which the Magistrate considers reasonable, and to pay the same to such person as the Magistrate may from time to time dir"
+        },
+        {
+          "rank": 2,
+          "score": 0.5286,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 143",
+          "page": 43,
+          "source": "bnss_2023.pdf",
+          "text_preview": "to such person. Explanation.—For the purposes of this Chapter, \"wife\" includes a woman who has been divorced by, or has obtained a divorce from, her husband and has not remarried. (2) Any such allowance for the maintenance or interim maintenance and expenses of proceeding shall be payable from the d"
+        },
+        {
+          "rank": 3,
+          "score": 0.5198,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 8",
+          "page": 5,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "in this section, the validity of any Hindu marriage shall in no way be affected by the omission to make the entry. RESTITUTION OF CONJUGAL RIGHTS AND JUDICIAL SEPARATION 9. Restitution of conjugal right.—5** * When either the husband or the wife has, without reasonable excuse, withdrawn from the soc"
+        },
+        {
+          "rank": 4,
+          "score": 0.5144,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 3",
+          "page": 12,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "report. (4) In every case where a marriage is dissolved by a decree of divorce, the court passing the decree shall give a copy thereof free of cost to each of the parties.] 4[23A. Relief for respondent in divorce and other proceedings .—In any proceeding for divorce or judicial separation or restitu"
+        },
+        {
+          "rank": 5,
+          "score": 0.5105,
+          "act": "The Hindu Marriage Act, 1955",
+          "section": "Section 6",
+          "page": 5,
+          "source": "hindu_marriage_act_1955.pdf",
+          "text_preview": "6. Ins. by s. 3, ibid. (w.e.f. 27-5-1976). 7. Sub-section (2) omitted by s. 3, ibid. (w.e.f. 27-5-1976). 10. Judicial separation .—1[(1) Either party to a marriage, whether solemnised before or after the commencement of this Act, may present a petition praying for a decree for judicial separation on"
+        }
+      ],
+      "answer": "तपशील व्यक्तीने त्यांची मोज आणि त्यांच्या विवाहाचे विरोधांसह पोटगी मिळवण्यासाठी काय करण्यास सहभागी आहे. त्यांनी त्यांची मोज आणि त्यांच्या विवाहाचे विरोधांसह त्यांच्यावर वाढवलेल्या पोटगी मिळवण्यासाठी काय करण्यासाठी योगदान देण्यास सहभागी आहे. त्यांनी त्यांची मोज आणि त्यांच्या विवाहाचे विरोधांसह त्यांच्यावर वाढवलेल्या पोटगी मिळवण्यासाठी त्यांच्यावर वाढवलेल्या पोटगी मिळवण्यासाठी काय करण्यासाठी योगदान देण्यास सहभागी आहे.\n\nत्यांनी त्यांची मोज आणि त्यांच्या विवाहाचे विरोधांसह त्यांच्यावर वाढवलेल्या पोटगी मिळवण्यासाठी काय करण्यासाठी योगदान देण्यास सहभागी आहे. त्यांनी त्यांची मोज आणि त्यांच्या विवाहाचे विरोधांसह त्यांच्यावर वाढवलेल्या पोटगी मिळवण्यासाठी काय करण्यासाठी योगदान देण्यास सहभागी आहे. \n\nत्यांनी त्यांची मोज आणि त्यांच्या विवाहाचे विरोधांसह त्यांच्यावर वाढवलेल्या पोटगी मिळवण्यासाठी काय करण्यासाठी योगदान देण्यास सहभागी आहे. \n\nत्यांनी",
+      "generation": {
+        "answer_chars": 843,
+        "keywords_expected": [],
+        "keywords_found": [],
+        "keyword_coverage": null,
+        "cites_section": false,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 1.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "cri-01",
+      "question": "The police are refusing to register my FIR. What are my legal options?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "criminal",
+      "expected_vertical": "criminal",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "criminal",
+        "vertical_filter_applied": "criminal",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.5588,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 2.86,
+        "generate": 30.4
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "bnss_2023.pdf"
+        ],
+        "retrieved_sections": [
+          "172",
+          "39",
+          "40",
+          "531"
+        ],
+        "source_hit": true,
+        "section_hit": false,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.5588
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.5588,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 172",
+          "page": 53,
+          "source": "bnss_2023.pdf",
+          "text_preview": "of the offence,— (i) proceed to conduct preliminary enquiry to ascertain whether there exists a prima facie case for proceeding in the matter within a period of fourteen days; or (ii) proceed with investigation when there exists a prima facie case. (4) Any person aggrieved by a refusal on the part o"
+        },
+        {
+          "rank": 2,
+          "score": 0.553,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 531",
+          "page": 190,
+          "source": "bnss_2023.pdf",
+          "text_preview": "Police Station……… To, ................................. [Name of the Accused/Noticee] ................................. [Last known Address] ................................. [Phone No./Email ID (if any)] In pursuance of sub-section ( 3) of section 35 of the Bharatiya Nagarik Suraksha Sanhita, 2023,"
+        },
+        {
+          "rank": 3,
+          "score": 0.5473,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 39",
+          "page": 15,
+          "source": "bnss_2023.pdf",
+          "text_preview": "39. (1) When any person who, in the presence of a police officer, has committed or has been accused of committing a non-cognizable offence refuses on demand of such officer to give his name and residence or gives a name or residence which such officer has reason to believe to be false, he may be arr"
+        },
+        {
+          "rank": 4,
+          "score": 0.5447,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 40",
+          "page": 15,
+          "source": "bnss_2023.pdf",
+          "text_preview": "nearest police station. (2) If there is reason to believe that such person comes under the provisions of sub-section (1) of section 35, a police officer shall take him in custody. (3) If there is reason to believe that he has committed a non-cognizable offence, and he refuses on the demand of a poli"
+        },
+        {
+          "rank": 5,
+          "score": 0.5373,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 531",
+          "page": 231,
+          "source": "bnss_2023.pdf",
+          "text_preview": "FORM No. 40 MAGISTRA TE'S OR JUDGE'S WARRANT OF COMMITMENT OF WITNESS REFUSING TO ANSWER OR TO PRODUCE DOCUMENT (See section 388) To.............................................. (name and designation of officer of Court) WHEREAS..............................................(name and description), b"
+        }
+      ],
+      "answer": "The police are refusing to register your FIR. Your legal options, based on the Bharatiya Nagarik Suraksha Sanhita, 2023, are as follows:\n\n1. **Right to Information**: You have the right to send the substance of your information, in writing and by post, to the Superintendent of Police concerned. If the Superintendent is satisfied that your information discloses the commission of a cognizable offence, they may either investigate the case themselves or direct an investigation to be made by any police officer subordinate to them (Section 172, The Bharatiya Nagarik Suraksha Sanhita, 2023).\n\n2. **Legal Action Against the Refusal**: If the Superintendent does not register your FIR, you can send this information to the Superintendent of Police. If the Superintendent is satisfied that your information discloses the commission of a cognizable offence, they may investigate the case. If they do not, you can then file a complaint with the Magistrate, alleging that the police have refused to register your FIR in contravention of the Bharatiya Nagarik Suraksha Sanhita, 2023 (Section 172, The Bharatiya Nagarik Suraksha Sanhita, 2023).\n\n3. **Legal Representation**: Consulting a lawyer or a local legal aid clinic can provide you with guidance on the best course of action and help you navigate the legal process effectively. They can also represent you in any legal proceedings that may arise.\n\n4. **Documentation**: Keep all communications and documents related to your complaint and the refusal to register your FIR. This documentation can be crucial in any legal proceedings.\n\n5. **Community Support**: Informing your community and seeking support from them can also be beneficial, as they may be able to provide additional support or witness statements that could strengthen your case.\n\nIt is advisable to consult a lawyer or a local legal aid clinic to understand your specific situation and to receive personalized legal advice.",
+      "generation": {
+        "answer_chars": 1936,
+        "keywords_expected": [
+          "Magistrate"
+        ],
+        "keywords_found": [
+          "Magistrate"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "cri-02",
+      "question": "What information must the police record when a cognizable offence is reported?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "criminal",
+      "expected_vertical": "criminal",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "criminal",
+        "vertical_filter_applied": "criminal",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.7025,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 1.49,
+        "generate": 23.13
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "bnss_2023.pdf"
+        ],
+        "retrieved_sections": [
+          "169",
+          "172",
+          "174",
+          "34"
+        ],
+        "source_hit": true,
+        "section_hit": null,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.7025
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.7025,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 172",
+          "page": 52,
+          "source": "bnss_2023.pdf",
+          "text_preview": "a Magistrate or, in petty cases, release him as soon as possible within a period of twenty-four hours. CHAPTER XIII INFORMATION TO THE POLICE AND THEIR POWERS TO INVESTIGATE 173. (1) Every information relating to the commission of a cognizable offence, irrespective of the area where the offence is c"
+        },
+        {
+          "rank": 2,
+          "score": 0.6833,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 172",
+          "page": 52,
+          "source": "bnss_2023.pdf",
+          "text_preview": "record by him on being signed within three days by the person giving it, Local inquiry. Police to prevent cognizable offences. Information of design to commit cognizable offences. Arrest to prevent commission of cognizable offences. Prevention of injury to public property. Persons bound to conform t"
+        },
+        {
+          "rank": 3,
+          "score": 0.6667,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 34",
+          "page": 13,
+          "source": "bnss_2023.pdf",
+          "text_preview": "police officer shall, in all cases where the arrest of a person is not required under the provisions of this sub-section, record the reasons in writing for not making the arrest; or (c) against whom credible information has been received that he has committed a cognizable offence punishable with imp"
+        },
+        {
+          "rank": 4,
+          "score": 0.6499,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 174",
+          "page": 53,
+          "source": "bnss_2023.pdf",
+          "text_preview": "174. (1) When information is given to an officer in charge of a police station of the commission within the limits of such station of a non-cognizable offence, he shall enter or cause to be entered the substance of the information in a book to be kept by such officer in such form as the State Govern"
+        },
+        {
+          "rank": 5,
+          "score": 0.6444,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 169",
+          "page": 52,
+          "source": "bnss_2023.pdf",
+          "text_preview": "169. Every police officer receiving information of a design to commit any cognizable offence shall communicate such information to the police officer to whom he is subordinate, and to any other officer whose duty it is to prevent or take cognizance of the commission of any such offence."
+        }
+      ],
+      "answer": "When a cognizable offence is reported, the police must record the following information as per Section 172 of The Bharatiya Nagarik Suraksha Sanhita, 2023:\n\n1. The substance of the information given orally or by electronic communication shall be entered in a book to be kept by such officer in such form as the State Government may by rules prescribe in this behalf. (The Bharatiya Nagarik Suraksha Sanhita, 2023, Section 172)\n\n2. If the information is given orally, it shall be reduced to writing by the officer or under his direction, and be read over to the informant. (The Bharatiya Nagarik Suraksha Sanhita, 2023, Section 172)\n\n3. If the information is given by electronic communication, it shall be taken on record by him on being signed within three days by the person giving it. (The Bharatiya Nagarik Suraksha Sanhita, 2023, Section 172)\n\nThese records must be in writing and signed by the informant. The police officer shall also enter the reasons for not making an arrest in writing if the arrest is not required under the provisions of the sub-section. (The Bharatiya Nagarik Suraksha Sanhita, 2023, Section 172)",
+      "generation": {
+        "answer_chars": 1124,
+        "keywords_expected": [
+          "cognizable"
+        ],
+        "keywords_found": [
+          "cognizable"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "cri-03",
+      "question": "What are my rights if I am arrested by the police?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "criminal",
+      "expected_vertical": "criminal",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "criminal",
+        "vertical_filter_applied": "criminal",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.6854,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 3.25,
+        "generate": 53.19
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "bnss_2023.pdf"
+        ],
+        "retrieved_sections": [
+          "34",
+          "36",
+          "37",
+          "51"
+        ],
+        "source_hit": true,
+        "section_hit": null,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.6854
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.6854,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 37",
+          "page": 14,
+          "source": "bnss_2023.pdf",
+          "text_preview": "any manner including in digital mode in every police station and at the district headquarters. Procedure of arrest and duties of officer making arrest. Designated police officer. [Part II— ___________________________________________________________ ___________________________________________________"
+        },
+        {
+          "rank": 2,
+          "score": 0.678,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 36",
+          "page": 14,
+          "source": "bnss_2023.pdf",
+          "text_preview": "36. Every police officer while making an arrest shall— (a) bear an accurate, visible and clear identification of his name which will facilitate easy identification; (b) prepare a memorandum of arrest which shall be— (i) attested by at least one witness, who is a member of the family of the person ar"
+        },
+        {
+          "rank": 3,
+          "score": 0.6585,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 51",
+          "page": 17,
+          "source": "bnss_2023.pdf",
+          "text_preview": "51. (1) When a person is arrested on a charge of committing an offence of such a nature and alleged to have been committed under such circumstances that there are reasonable grounds for believing that an examination of his person will afford evidence as to the commission of an offence, it shall be l"
+        },
+        {
+          "rank": 4,
+          "score": 0.6577,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 34",
+          "page": 14,
+          "source": "bnss_2023.pdf",
+          "text_preview": "identify himself, the police officer may, subject to such orders as may have been passed by a competent Court in this behalf, arrest him for the offence mentioned in the notice. (7) No arrest shall be made without prior permission of an officer not below the rank of Deputy Superintendent of Police i"
+        },
+        {
+          "rank": 5,
+          "score": 0.6562,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 51",
+          "page": 17,
+          "source": "bnss_2023.pdf",
+          "text_preview": "arrest and of right to bail. Obligation of person making arrest to inform about arrest, etc., to relative or friend. Search of arrested person. Power to seize offensive weapons. Examination of accused by medical practitioner at request of police officer. Sec. 1] _____________________________________"
+        }
+      ],
+      "answer": "If you are arrested by the police, you have several rights under the Bharatiya Nagarik Suraksha Sanhita, 2023, as outlined in Section 36, Section 37, Section 51, and Section 34 of the Act. Here are your rights:\n\n1. **Right to Meet an Advocate**: You have the right to meet an advocate of your choice during interrogation, though not throughout the entire process (Section 37, The Bharatiya Nagarik Suraksha Sanhita, 2023).\n   \n2. **Right to Identification**: When making an arrest, every police officer must bear an accurate, visible, and clear identification of his name, which will facilitate easy identification (Section 36, The Bharatiya Nagarik Suraksha Sanhita, 2023).\n\n3. **Right to a Memorandum of Arrest**: The police officer must prepare a memorandum of arrest which must be attested by at least one witness, who is a member of the family of the person arrested or a respectable member of the locality where the arrest is made, and countersigned by the person arrested (Section 36, The Bharatiya Nagarik Suraksha Sanhita, 2023).\n\n4. **Right to Inform About Arrest**: The police officer must inform the person arrested, unless the memorandum is attested by a member of his family, that he has a right to have a relative or a friend or any other person named by him to be informed of his arrest (Section 36, The Bharatiya Nagarik Suraksha Sanhita, 2023).\n\n5. **Right to Examination by Medical Practitioner**: When a person is arrested on a charge of committing an offence, a registered medical practitioner, acting at the request of any police officer, and any person acting in good faith in his aid and under his direction, may make an examination of the person arrested as is reasonably necessary for the pursuit of offenders into other jurisdictions. No unnecessary restraint. Person arrested to be informed of grounds of arrest and of right to bail. Obligation of person making arrest to inform about arrest, etc., to relative or friend. Search of arrested person. Power to seize offensive weapons (Section 51, The Bharatiya Nagarik Suraksha Sanhita, 2023).\n\n6. **Right to Bail**: The person arrested has the right to bail, which must be informed to them (Section 51, The Bharatiya Nagarik Suraksha Sanhita, 2023).\n\n7. **Right to Information About Arrest**: The person making the arrest must inform the arrested person about the arrest, the grounds of arrest, and the right to bail (Section 51, The Bharatiya Nagarik Suraksha Sanhita, 2023).\n\n8. **Right to Search**: The person making the arrest has the obligation to inform the arrested person about the arrest, and the arrested person has the right to have a relative or a friend or any other person named by him to be informed of his arrest. The arrested person also has the right to have a search conducted (Section 51, The Bharatiya Nagarik Suraksha Sanhita, 2023).\n\n9. **Right to Use Force**: The person making the arrest has the power to seize offensive weapons and to use such force as is reasonably necessary for that purpose (Section 51, The Bharatiya Nagarik Suraksha Sanhita, 2023).\n\nIf you find yourself in a situation where you believe your rights have been violated, you should consult a lawyer or a local legal aid clinic for further guidance.",
+      "generation": {
+        "answer_chars": 3221,
+        "keywords_expected": [
+          "arrest"
+        ],
+        "keywords_found": [
+          "arrest"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "cri-04",
+      "question": "What is the punishment for criminal intimidation and threats under Indian criminal law?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "criminal",
+      "expected_vertical": "criminal",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "criminal",
+        "vertical_filter_applied": "criminal",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.705,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 3.05,
+        "generate": 22.16
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "bns_2023.pdf",
+          "bns_2023.pdf",
+          "bns_2023.pdf",
+          "bns_2023.pdf",
+          "bns_2023.pdf"
+        ],
+        "retrieved_sections": [
+          "112",
+          "135",
+          "299",
+          "351"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.705
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.705,
+          "act": "The Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 351",
+          "page": 98,
+          "source": "bns_2023.pdf",
+          "text_preview": "commits the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both. (3) Whoever commits the offence of criminal intimidation by threatening to cause death or grievous hurt, or to cause the destru"
+        },
+        {
+          "rank": 2,
+          "score": 0.6966,
+          "act": "The Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 135",
+          "page": 44,
+          "source": "bns_2023.pdf",
+          "text_preview": "on grave provocation. Assault or criminal force in attempt to commit theft of property carried by a person. Assault or criminal force in attempt to wrongfully confine a person. 44 THE GAZETTE OF INDIA EXTRAORDINARY [Part II—____________________________________________________________________________"
+        },
+        {
+          "rank": 3,
+          "score": 0.6797,
+          "act": "The Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 351",
+          "page": 97,
+          "source": "bns_2023.pdf",
+          "text_preview": "containing goods. Criminal intimidation. Explanation.—A threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section. Illustration. A, for the purpose of inducing B to resist from prosecuting a civil suit, threatens to burn B’s house. A i"
+        },
+        {
+          "rank": 4,
+          "score": 0.6729,
+          "act": "The Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 112",
+          "page": 36,
+          "source": "bns_2023.pdf",
+          "text_preview": "be punished with imprisonment for a term which shall not be less than one year but which may extend to seven years, and shall also be liable to fine. P e t t y organised crime. 36 THE GAZETTE OF INDIA EXTRAORDINARY [Part II—____________________________________________________________________________"
+        },
+        {
+          "rank": 5,
+          "score": 0.665,
+          "act": "The Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 299",
+          "page": 77,
+          "source": "bns_2023.pdf",
+          "text_preview": "299.Whoever, with deliberate and malicious intention of outraging the religious feelings of any class of citizens of India, by words, either spoken or written, or by signs or by visible representations or through electronic means or otherwise, insults or attempts to insult the religion or the religi"
+        }
+      ],
+      "answer": "The punishment for criminal intimidation and threats under Indian criminal law is governed by Section 351 of The Bharatiya Nyaya Sanhita, 2023.\n\nFor criminal intimidation, the punishment is as follows:\n- Imprisonment of either description for a term which may extend to two years, or with fine, or with both. (The Bharatiya Nyaya Sanhita, 2023, Section 351)\n\nFor threats to cause death, grievous hurt, destruction of property by fire, or to impute unchastity to a woman, the punishment is:\n- Imprisonment of either description for a term which may extend to seven years, or with fine, or with both. (The Bharatiya Nyaya Sanhita, 2023, Section 351)\n\nFor threats on grave and sudden provocation, the punishment is:\n- Simple imprisonment for a term which may extend to one month, or with fine which may extend to one thousand rupees, or with both. (The Bharatiya Nyaya Sanhita, 2023, Section 135)\n\nThese provisions provide the legal framework for punishing individuals who commit acts of criminal intimidation and threats in India. For specific cases, it is advisable to consult a lawyer or a local legal aid clinic for further guidance.",
+      "generation": {
+        "answer_chars": 1134,
+        "keywords_expected": [
+          "intimidation"
+        ],
+        "keywords_found": [
+          "intimidation"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "cri-05",
+      "question": "Is cruelty by a husband or his relatives towards a wife a criminal offence?",
+      "type": "in_scope",
+      "language": "en",
+      "classified_vertical": "criminal",
+      "expected_vertical": "criminal",
+      "vertical_correct": true,
+      "diagnostics": {
+        "classified_vertical": "criminal",
+        "vertical_filter_applied": "criminal",
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.7111,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.0,
+        "retrieve": 2.18,
+        "generate": 9.63
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "bns_2023.pdf",
+          "bns_2023.pdf",
+          "bnss_2023.pdf",
+          "bns_2023.pdf",
+          "bnss_2023.pdf"
+        ],
+        "retrieved_sections": [
+          "359",
+          "531",
+          "79",
+          "85",
+          "86"
+        ],
+        "source_hit": true,
+        "section_hit": true,
+        "precision_at_k": 0.6,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.7111
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.7111,
+          "act": "The Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 85",
+          "page": 29,
+          "source": "bns_2023.pdf",
+          "text_preview": "85.Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine."
+        },
+        {
+          "rank": 2,
+          "score": 0.6087,
+          "act": "The Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 79",
+          "page": 28,
+          "source": "bns_2023.pdf",
+          "text_preview": "79.Whoever, intending to insult the modesty of any woman, utters any words, makes any sound or gesture, or exhibits any object in any form, intending that such word or sound shall be heard, or that such gesture or object shall be seen, by such woman, or intrudes upon the privacy of such woman, shall"
+        },
+        {
+          "rank": 3,
+          "score": 0.601,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 531",
+          "page": 162,
+          "source": "bnss_2023.pdf",
+          "text_preview": "married. 84 Enticing or taking away or Imprisonment for 2 years, Non-cognizable. Bailable. Any Magistrate. detaining with a criminal or fine, or both. intent a married woman. 85 Punishment for subjecting Imprisonment for 3 years Cognizable if information Non-b ailable. Magistrate of the first a marr"
+        },
+        {
+          "rank": 4,
+          "score": 0.5833,
+          "act": "The Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 86",
+          "page": 29,
+          "source": "bns_2023.pdf",
+          "text_preview": "86.For the purposes of section 85, “cruelty” means— (a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or (b) harassment of the woman where such haras"
+        },
+        {
+          "rank": 5,
+          "score": 0.5728,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 359",
+          "page": 109,
+          "source": "bnss_2023.pdf",
+          "text_preview": "on 122(1) The person to whom the hurt provocation. is caused. V oluntarily causing grievous 122(2) The person to whom the hurt hurt on grave and sudden is caused. provocation. Wrongfully restraining or 126(2), 127(2) The person restrained or confining any person. confined. Wrongfully confining a 127"
+        }
+      ],
+      "answer": "Yes, cruelty by a husband or his relatives towards a wife is a criminal offence under the Bharatiya Nyaya Sanhita, 2023, Section 85. This section states that anyone who subjects a woman to cruelty shall be punished with imprisonment for a term which may extend to three years and also liable to fine.",
+      "generation": {
+        "answer_chars": 300,
+        "keywords_expected": [
+          "cruelty"
+        ],
+        "keywords_found": [
+          "cruelty"
+        ],
+        "keyword_coverage": 1.0,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.0
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "cri-06",
+      "question": "पुलिस मेरी एफआईआर दर्ज नहीं कर रही है, मुझे क्या करना चाहिए?",
+      "type": "in_scope",
+      "language": "hi",
+      "classified_vertical": "rti",
+      "expected_vertical": "criminal",
+      "vertical_correct": false,
+      "diagnostics": {
+        "classified_vertical": "rti",
+        "vertical_filter_applied": "rti",
+        "fallback_to_full_collection": true,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.5641,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.3,
+        "retrieve": 1.49,
+        "generate": 61.46
+      },
+      "retrieval": {
+        "retrieved_sources": [
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "bnss_2023.pdf",
+          "bnss_2023.pdf"
+        ],
+        "retrieved_sections": [
+          "172",
+          "176",
+          "396",
+          "531"
+        ],
+        "source_hit": true,
+        "section_hit": false,
+        "precision_at_k": 1.0,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "top_similarity": 0.5641
+      },
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.5641,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 172",
+          "page": 53,
+          "source": "bnss_2023.pdf",
+          "text_preview": "of the offence,— (i) proceed to conduct preliminary enquiry to ascertain whether there exists a prima facie case for proceeding in the matter within a period of fourteen days; or (ii) proceed with investigation when there exists a prima facie case. (4) Any person aggrieved by a refusal on the part o"
+        },
+        {
+          "rank": 2,
+          "score": 0.5469,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 531",
+          "page": 190,
+          "source": "bnss_2023.pdf",
+          "text_preview": "Police Station……… To, ................................. [Name of the Accused/Noticee] ................................. [Last known Address] ................................. [Phone No./Email ID (if any)] In pursuance of sub-section ( 3) of section 35 of the Bharatiya Nagarik Suraksha Sanhita, 2023,"
+        },
+        {
+          "rank": 3,
+          "score": 0.545,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 531",
+          "page": 240,
+          "source": "bnss_2023.pdf",
+          "text_preview": "FORM No. 49 WARRANT OF A TTACHMENT TO ENFORCE A BOND (See section 491) To the Police Officer in charge of the police station at.............................................. WHEREAS..............................................(name, description and address of person) has failed to appear on........"
+        },
+        {
+          "rank": 4,
+          "score": 0.5366,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 396",
+          "page": 124,
+          "source": "bnss_2023.pdf",
+          "text_preview": "identified, and where no trial takes place, the victim or his dependents may make an application to the State or the District Legal Services Authority for award of compensation. (5) On receipt of such recommendations or on the application under sub-section (4), the State or the District Legal Servic"
+        },
+        {
+          "rank": 5,
+          "score": 0.5336,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 176",
+          "page": 54,
+          "source": "bnss_2023.pdf",
+          "text_preview": "as to the commission of any such offence is given against any person by name and the case is not of a serious nature, the officer in charge of a police station need not proceed in person or depute a subordinate officer to make an investigation on the spot; (b) if it appears to the officer in charge "
+        }
+      ],
+      "answer": "मुझे यहाँ दिया गया अभियांत्रित अफाइट नहीं दिया गया है, तो मैं यह कर सकता हूँ: \n\n1. अपने नाम और अफाइट नंबर को अपने नामकरण दर्ज करने के लिए एक नियमित रूप में अपने नामकरण दर्ज कार्यक्रम का उपयोग कर सकता हूँ। (The Bharatiya Nagarik Suraksha Sanhita, 2023, Section 531, Page 190)\n\n2. अफाइट दर्ज नहीं करने के बाद, मैं एक नियमित रूप में अपने नामकरण दर्ज कार्यक्रम का उपयोग कर सकता हूँ और अपने नामकरण दर्ज कार्यक्रम के अनुसार अफाइट दर्ज कर सकता हूँ। (The Bharatiya Nagarik Suraksha Sanhita, 2023, Section 531, Page 190)\n\n3. यदि अफाइट दर्ज नहीं किया जा सके, मैं एक नियमित रूप में अपने नामकरण दर्ज कार्यक्रम का उपयोग कर सकता हूँ और नामकरण दर्ज कार्यक्रम के अनुसार अफाइट दर्ज कर सकता हूँ। (The Bharatiya Nagarik Suraksha Sanhita, 2023, Section 531, Page 190)\n\n4. यदि अफाइट दर्ज नहीं किया जा सके, मैं एक नियमित रूप में अपने नामकरण दर्ज कार्यक्रम का उपयोग कर सकता हूँ और नामकरण दर्ज कार्यक्रम के अनुसार अफाइट दर्ज कर सकता हूँ। (The Bharatiya Nagarik Suraksha Sanhita, 2023, Section 531, Page 190)\n\n5. यदि अफाइट दर",
+      "generation": {
+        "answer_chars": 1000,
+        "keywords_expected": [],
+        "keywords_found": [],
+        "keyword_coverage": null,
+        "cites_section": true,
+        "grounded": true,
+        "unsupported_sections": [],
+        "language_ok": true,
+        "devanagari_share": 0.677
+      },
+      "false_abstention": false
+    },
+    {
+      "id": "oos-01",
+      "question": "How do I apply for a United States tourist visa from India?",
+      "type": "out_of_scope",
+      "language": "en",
+      "classified_vertical": "general",
+      "expected_vertical": null,
+      "vertical_correct": null,
+      "diagnostics": {
+        "classified_vertical": "general",
+        "vertical_filter_applied": null,
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 0,
+        "top_similarity": 0.4796,
+        "min_similarity_threshold": 0.52,
+        "abstained": true,
+        "collection_size": 3248
+      },
+      "abstained": true,
+      "timings_s": {
+        "classify": 0.45,
+        "retrieve": 3.85,
+        "generate": 1.05
+      },
+      "retrieval": {
+        "top_similarity": 0.4796
+      },
+      "abstention_correct": true,
+      "retrieved_chunks": [],
+      "answer": "I could not find anything in my knowledge base that covers this question. My knowledge base contains Indian law on Right to Information, tenancy, consumer protection, family law and criminal procedure. For anything else, or for advice on your specific case, please consult a lawyer or your nearest District Legal Services Authority (free legal aid)."
+    },
+    {
+      "id": "oos-02",
+      "question": "What is the best mutual fund to invest my savings in this year?",
+      "type": "out_of_scope",
+      "language": "en",
+      "classified_vertical": "general",
+      "expected_vertical": null,
+      "vertical_correct": null,
+      "diagnostics": {
+        "classified_vertical": "general",
+        "vertical_filter_applied": null,
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 0,
+        "top_similarity": 0.3847,
+        "min_similarity_threshold": 0.52,
+        "abstained": true,
+        "collection_size": 3248
+      },
+      "abstained": true,
+      "timings_s": {
+        "classify": 0.26,
+        "retrieve": 0.67,
+        "generate": 0.46
+      },
+      "retrieval": {
+        "top_similarity": 0.3847
+      },
+      "abstention_correct": true,
+      "retrieved_chunks": [],
+      "answer": "I could not find anything in my knowledge base that covers this question. My knowledge base contains Indian law on Right to Information, tenancy, consumer protection, family law and criminal procedure. For anything else, or for advice on your specific case, please consult a lawyer or your nearest District Legal Services Authority (free legal aid)."
+    },
+    {
+      "id": "oos-03",
+      "question": "Write me a Python script that scrapes a website.",
+      "type": "out_of_scope",
+      "language": "en",
+      "classified_vertical": "general",
+      "expected_vertical": null,
+      "vertical_correct": null,
+      "diagnostics": {
+        "classified_vertical": "general",
+        "vertical_filter_applied": null,
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 0,
+        "top_similarity": 0.4119,
+        "min_similarity_threshold": 0.52,
+        "abstained": true,
+        "collection_size": 3248
+      },
+      "abstained": true,
+      "timings_s": {
+        "classify": 0.23,
+        "retrieve": 0.62,
+        "generate": 0.23
+      },
+      "retrieval": {
+        "top_similarity": 0.4119
+      },
+      "abstention_correct": true,
+      "retrieved_chunks": [],
+      "answer": "I could not find anything in my knowledge base that covers this question. My knowledge base contains Indian law on Right to Information, tenancy, consumer protection, family law and criminal procedure. For anything else, or for advice on your specific case, please consult a lawyer or your nearest District Legal Services Authority (free legal aid)."
+    },
+    {
+      "id": "oos-04",
+      "question": "What is the penalty for late filing of GST returns under Indian tax law?",
+      "type": "out_of_scope",
+      "language": "en",
+      "classified_vertical": "consumer",
+      "expected_vertical": null,
+      "vertical_correct": null,
+      "diagnostics": {
+        "classified_vertical": "consumer",
+        "vertical_filter_applied": "consumer",
+        "fallback_to_full_collection": true,
+        "candidates_fetched": 15,
+        "chunks_used": 5,
+        "top_similarity": 0.5588,
+        "min_similarity_threshold": 0.52,
+        "abstained": false,
+        "collection_size": 3248
+      },
+      "abstained": false,
+      "timings_s": {
+        "classify": 0.29,
+        "retrieve": 0.41,
+        "generate": 19.44
+      },
+      "retrieval": {
+        "top_similarity": 0.5588
+      },
+      "abstention_correct": false,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "score": 0.5588,
+          "act": "The Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 209",
+          "page": 59,
+          "source": "bns_2023.pdf",
+          "text_preview": "209.Whoever fails to appear at the specified place and the specified time as required by a proclamation published under sub-section (1) of section 84 of the Bharatiya Nagarik Suraksha Sanhita, 2023, shall be punished with imprisonment for a term which may extend to three years, or with fine, or with"
+        },
+        {
+          "rank": 2,
+          "score": 0.5464,
+          "act": "The Consumer Protection Act, 2019",
+          "section": "Section 91",
+          "page": 33,
+          "source": "cpa_2019.pdf",
+          "text_preview": "distributing or importing products containing adulterant. Punishment for manufacturing for sale or for storing or selling or distributing or importing spurious goods. 45 of 1860. 34 THE GAZETTE OF INDIA EXTRAORDINARY [P ART II— (b) causing injury resulting in grievous hurt to the consumer, with impr"
+        },
+        {
+          "rank": 3,
+          "score": 0.5359,
+          "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "section": "Section 531",
+          "page": 176,
+          "source": "bnss_2023.pdf",
+          "text_preview": "to be executed after it has been satisfied. 248( a) False charge of offence Imprisonment for 5 years, Non-cognizable. Bailable. Magistrate of the first made with intent to injure. or fine of 2 lakh rupees, class. or both. 248( b) Criminal proceeding Imprisonment for 10 years Non-cognizable. Bailable"
+        },
+        {
+          "rank": 4,
+          "score": 0.5331,
+          "act": "The Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 135",
+          "page": 45,
+          "source": "bns_2023.pdf",
+          "text_preview": "from India or from lawful guardianship shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine."
+        },
+        {
+          "rank": 5,
+          "score": 0.5317,
+          "act": "The Bharatiya Nyaya Sanhita, 2023",
+          "section": "Section 299",
+          "page": 77,
+          "source": "bns_2023.pdf",
+          "text_preview": "299.Whoever, with deliberate and malicious intention of outraging the religious feelings of any class of citizens of India, by words, either spoken or written, or by signs or by visible representations or through electronic means or otherwise, insults or attempts to insult the religion or the religi"
+        }
+      ],
+      "answer": "The question asks about the penalty for late filing of GST returns under Indian tax law, but the provided context passages do not contain any information related to GST returns or penalties for late filings. \n\nTo answer this question, you would need to consult the Goods and Services Tax Act, 2017, which is the primary legislation governing GST in India. The relevant section would be Section 133 of the Goods and Services Tax Act, 2017, which deals with penalties for non-compliance with the filing of returns.\n\nFor practical purposes, if you need to know the penalties for late filing of GST returns, you should refer to Section 133 of the Goods and Services Tax Act, 2017. This section outlines the penalties for failing to file returns within the prescribed time. \n\nIf you have any specific details or need further information on penalties, you should consult the Goods and Services Tax Act, 2017, and Section 133 for the most accurate and up-to-date information."
+    },
+    {
+      "id": "oos-05",
+      "question": "How many days of casual leave am I entitled to as a software engineer at a private company?",
+      "type": "out_of_scope",
+      "language": "en",
+      "classified_vertical": "general",
+      "expected_vertical": null,
+      "vertical_correct": null,
+      "diagnostics": {
+        "classified_vertical": "general",
+        "vertical_filter_applied": null,
+        "fallback_to_full_collection": false,
+        "candidates_fetched": 15,
+        "chunks_used": 0,
+        "top_similarity": 0.4606,
+        "min_similarity_threshold": 0.52,
+        "abstained": true,
+        "collection_size": 3248
+      },
+      "abstained": true,
+      "timings_s": {
+        "classify": 0.65,
+        "retrieve": 1.29,
+        "generate": 0.94
+      },
+      "retrieval": {
+        "top_similarity": 0.4606
+      },
+      "abstention_correct": true,
+      "retrieved_chunks": [],
+      "answer": "I could not find anything in my knowledge base that covers this question. My knowledge base contains Indian law on Right to Information, tenancy, consumer protection, family law and criminal procedure. For anything else, or for advice on your specific case, please consult a lawyer or your nearest District Legal Services Authority (free legal aid)."
+    }
+  ]
+}

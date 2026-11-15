@@ -1,0 +1,502 @@
+{
+  "about": "Labelled evaluation set for the NyayAI RAG pipeline. 'expected_sources' and 'expected_sections' are reference answers taken from the indexed Acts themselves and checked against the built index by evaluation/validate_expectations.py. 'expected_keywords' are terms a correct, grounded answer should contain; they are matched case-insensitively. Out-of-scope cases must be refused, not answered.",
+  "cases": [
+    {
+      "id": "rti-01",
+      "question": "How do I file an RTI application and how long does the Public Information Officer have to reply?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "rti",
+      "expected_sources": [
+        "rti_act_2005_en.pdf"
+      ],
+      "expected_sections": [
+        "6",
+        "7"
+      ],
+      "expected_keywords": [
+        "Public Information Officer",
+        "thirty days"
+      ]
+    },
+    {
+      "id": "rti-02",
+      "question": "What should I do if the Public Information Officer refuses to give me the information I asked for?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "rti",
+      "expected_sources": [
+        "rti_act_2005_en.pdf"
+      ],
+      "expected_sections": [
+        "19"
+      ],
+      "expected_keywords": [
+        "appeal"
+      ]
+    },
+    {
+      "id": "rti-03",
+      "question": "Which kinds of information are exempt from disclosure under the RTI Act?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "rti",
+      "expected_sources": [
+        "rti_act_2005_en.pdf"
+      ],
+      "expected_sections": [
+        "8"
+      ],
+      "expected_keywords": [
+        "exempt"
+      ]
+    },
+    {
+      "id": "rti-04",
+      "question": "Can an RTI application be rejected if it concerns the life or liberty of a person, and what is the time limit then?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "rti",
+      "expected_sources": [
+        "rti_act_2005_en.pdf"
+      ],
+      "expected_sections": [
+        "7"
+      ],
+      "expected_keywords": [
+        "forty-eight hours"
+      ]
+    },
+    {
+      "id": "rti-05",
+      "question": "RTI अर्ज कसा दाखल करायचा आणि किती दिवसांत उत्तर मिळते?",
+      "language": "mr",
+      "type": "in_scope",
+      "expected_vertical": "rti",
+      "expected_sources": [
+        "rti_act_2005_en.pdf",
+        "rti_act_2005_hi.pdf"
+      ],
+      "expected_sections": [
+        "6",
+        "7"
+      ],
+      "expected_keywords": []
+    },
+    {
+      "id": "rti-06",
+      "question": "सूचना का अधिकार अधिनियम के तहत जानकारी न मिलने पर अपील कहाँ करें?",
+      "language": "hi",
+      "type": "in_scope",
+      "expected_vertical": "rti",
+      "expected_sources": [
+        "rti_act_2005_en.pdf",
+        "rti_act_2005_hi.pdf"
+      ],
+      "expected_sections": [
+        "19"
+      ],
+      "expected_keywords": []
+    },
+    {
+      "id": "ten-01",
+      "question": "My landlord is refusing to return my security deposit after I vacated the flat. What does the law say?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "tenancy",
+      "expected_sources": [
+        "model_tenancy_act_2021.pdf",
+        "mh_rent_control_1999.pdf"
+      ],
+      "expected_sections": [
+        "11"
+      ],
+      "expected_keywords": [
+        "security deposit"
+      ]
+    },
+    {
+      "id": "ten-02",
+      "question": "On what grounds can a landlord legally evict a tenant?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "tenancy",
+      "expected_sources": [
+        "model_tenancy_act_2021.pdf",
+        "mh_rent_control_1999.pdf"
+      ],
+      "expected_sections": [
+        "21",
+        "16"
+      ],
+      "expected_keywords": [
+        "evict"
+      ]
+    },
+    {
+      "id": "ten-03",
+      "question": "Does a rent agreement have to be in writing and does it need to be registered with any authority?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "tenancy",
+      "expected_sources": [
+        "model_tenancy_act_2021.pdf"
+      ],
+      "expected_sections": [],
+      "expected_keywords": [
+        "agreement"
+      ],
+      "label_note": "section-level expectation removed: the governing section exists in the text but its heading style was not captured as a label by the chunker, so it cannot be verified at section granularity (see validate_expectations.py output)"
+    },
+    {
+      "id": "ten-04",
+      "question": "Can my landlord increase the rent whenever he wants, or does he have to give notice?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "tenancy",
+      "expected_sources": [
+        "model_tenancy_act_2021.pdf",
+        "mh_rent_control_1999.pdf"
+      ],
+      "expected_sections": [
+        "9"
+      ],
+      "expected_keywords": [
+        "rent"
+      ]
+    },
+    {
+      "id": "ten-05",
+      "question": "मेरा मकान मालिक मेरी सिक्योरिटी डिपॉजिट वापस नहीं कर रहा है, मैं क्या कर सकता हूँ?",
+      "language": "hi",
+      "type": "in_scope",
+      "expected_vertical": "tenancy",
+      "expected_sources": [
+        "model_tenancy_act_2021.pdf",
+        "mh_rent_control_1999.pdf"
+      ],
+      "expected_sections": [
+        "11"
+      ],
+      "expected_keywords": []
+    },
+    {
+      "id": "con-01",
+      "question": "I bought a defective washing machine online and the seller refuses to refund me. Where can I file a complaint?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "consumer",
+      "expected_sources": [
+        "cpa_2019.pdf"
+      ],
+      "expected_sections": [
+        "35",
+        "34"
+      ],
+      "expected_keywords": [
+        "District Commission"
+      ]
+    },
+    {
+      "id": "con-02",
+      "question": "What is the time limit for filing a consumer complaint after the problem occurs?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "consumer",
+      "expected_sources": [
+        "cpa_2019.pdf"
+      ],
+      "expected_sections": [
+        "69"
+      ],
+      "expected_keywords": [
+        "two years"
+      ]
+    },
+    {
+      "id": "con-03",
+      "question": "Who counts as a consumer under the Consumer Protection Act?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "consumer",
+      "expected_sources": [
+        "cpa_2019.pdf"
+      ],
+      "expected_sections": [],
+      "expected_keywords": [
+        "consumer"
+      ],
+      "label_note": "section-level expectation removed: the governing section exists in the text but its heading style was not captured as a label by the chunker, so it cannot be verified at section granularity (see validate_expectations.py output)"
+    },
+    {
+      "id": "con-04",
+      "question": "What does deficiency in service mean and can I claim compensation for it?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "consumer",
+      "expected_sources": [
+        "cpa_2019.pdf"
+      ],
+      "expected_sections": [],
+      "expected_keywords": [
+        "deficiency"
+      ],
+      "label_note": "section-level expectation removed: the governing section exists in the text but its heading style was not captured as a label by the chunker, so it cannot be verified at section granularity (see validate_expectations.py output)"
+    },
+    {
+      "id": "con-05",
+      "question": "Is misleading advertising punishable under consumer law in India?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "consumer",
+      "expected_sources": [
+        "cpa_2019.pdf"
+      ],
+      "expected_sections": [
+        "89",
+        "2"
+      ],
+      "expected_keywords": [
+        "misleading"
+      ]
+    },
+    {
+      "id": "fam-01",
+      "question": "What is the procedure to claim maintenance from my husband after separation?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "family",
+      "expected_sources": [
+        "hindu_marriage_act_1955.pdf",
+        "dv_act_2005.pdf"
+      ],
+      "expected_sections": [
+        "24",
+        "25",
+        "20"
+      ],
+      "expected_keywords": [
+        "maintenance"
+      ]
+    },
+    {
+      "id": "fam-02",
+      "question": "What are the grounds on which a Hindu marriage can be dissolved by divorce?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "family",
+      "expected_sources": [
+        "hindu_marriage_act_1955.pdf"
+      ],
+      "expected_sections": [
+        "13"
+      ],
+      "expected_keywords": [
+        "divorce"
+      ]
+    },
+    {
+      "id": "fam-03",
+      "question": "Can my husband and I get a divorce by mutual consent, and how long do we have to wait?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "family",
+      "expected_sources": [
+        "hindu_marriage_act_1955.pdf"
+      ],
+      "expected_sections": [
+        "13B"
+      ],
+      "expected_keywords": [
+        "mutual consent"
+      ]
+    },
+    {
+      "id": "fam-04",
+      "question": "My husband's family is harassing me at home. What protection can I get under the domestic violence law?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "family",
+      "expected_sources": [
+        "dv_act_2005.pdf"
+      ],
+      "expected_sections": [
+        "12",
+        "18",
+        "19"
+      ],
+      "expected_keywords": [
+        "protection order"
+      ]
+    },
+    {
+      "id": "fam-05",
+      "question": "Can I continue to live in my matrimonial home after filing a domestic violence case?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "family",
+      "expected_sources": [
+        "dv_act_2005.pdf"
+      ],
+      "expected_sections": [
+        "17",
+        "19"
+      ],
+      "expected_keywords": [
+        "residence"
+      ]
+    },
+    {
+      "id": "fam-06",
+      "question": "पतीपासून वेगळे झाल्यानंतर पोटगी मिळवण्यासाठी काय करावे?",
+      "language": "mr",
+      "type": "in_scope",
+      "expected_vertical": "family",
+      "expected_sources": [
+        "hindu_marriage_act_1955.pdf",
+        "dv_act_2005.pdf"
+      ],
+      "expected_sections": [
+        "24",
+        "25",
+        "20"
+      ],
+      "expected_keywords": []
+    },
+    {
+      "id": "cri-01",
+      "question": "The police are refusing to register my FIR. What are my legal options?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "criminal",
+      "expected_sources": [
+        "bnss_2023.pdf"
+      ],
+      "expected_sections": [
+        "173",
+        "175"
+      ],
+      "expected_keywords": [
+        "Magistrate"
+      ]
+    },
+    {
+      "id": "cri-02",
+      "question": "What information must the police record when a cognizable offence is reported?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "criminal",
+      "expected_sources": [
+        "bnss_2023.pdf"
+      ],
+      "expected_sections": [],
+      "expected_keywords": [
+        "cognizable"
+      ],
+      "label_note": "section-level expectation removed: the governing section exists in the text but its heading style was not captured as a label by the chunker, so it cannot be verified at section granularity (see validate_expectations.py output)"
+    },
+    {
+      "id": "cri-03",
+      "question": "What are my rights if I am arrested by the police?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "criminal",
+      "expected_sources": [
+        "bnss_2023.pdf"
+      ],
+      "expected_sections": [],
+      "expected_keywords": [
+        "arrest"
+      ],
+      "label_note": "section-level expectation removed: the governing section exists in the text but its heading style was not captured as a label by the chunker, so it cannot be verified at section granularity (see validate_expectations.py output)"
+    },
+    {
+      "id": "cri-04",
+      "question": "What is the punishment for criminal intimidation and threats under Indian criminal law?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "criminal",
+      "expected_sources": [
+        "bns_2023.pdf"
+      ],
+      "expected_sections": [
+        "351"
+      ],
+      "expected_keywords": [
+        "intimidation"
+      ]
+    },
+    {
+      "id": "cri-05",
+      "question": "Is cruelty by a husband or his relatives towards a wife a criminal offence?",
+      "language": "en",
+      "type": "in_scope",
+      "expected_vertical": "criminal",
+      "expected_sources": [
+        "bns_2023.pdf"
+      ],
+      "expected_sections": [
+        "85",
+        "86"
+      ],
+      "expected_keywords": [
+        "cruelty"
+      ]
+    },
+    {
+      "id": "cri-06",
+      "question": "पुलिस मेरी एफआईआर दर्ज नहीं कर रही है, मुझे क्या करना चाहिए?",
+      "language": "hi",
+      "type": "in_scope",
+      "expected_vertical": "criminal",
+      "expected_sources": [
+        "bnss_2023.pdf"
+      ],
+      "expected_sections": [
+        "173",
+        "175"
+      ],
+      "expected_keywords": []
+    },
+    {
+      "id": "oos-01",
+      "question": "How do I apply for a United States tourist visa from India?",
+      "language": "en",
+      "type": "out_of_scope",
+      "expect_abstain": true,
+      "note": "Immigration law is not in the knowledge base."
+    },
+    {
+      "id": "oos-02",
+      "question": "What is the best mutual fund to invest my savings in this year?",
+      "language": "en",
+      "type": "out_of_scope",
+      "expect_abstain": true,
+      "note": "Financial advice, outside scope and outside competence."
+    },
+    {
+      "id": "oos-03",
+      "question": "Write me a Python script that scrapes a website.",
+      "language": "en",
+      "type": "out_of_scope",
+      "expect_abstain": true,
+      "note": "Not a legal question at all."
+    },
+    {
+      "id": "oos-04",
+      "question": "What is the penalty for late filing of GST returns under Indian tax law?",
+      "language": "en",
+      "type": "out_of_scope",
+      "expect_abstain": true,
+      "note": "Indian law, but tax law is not among the five indexed domains — the hardest abstention case."
+    },
+    {
+      "id": "oos-05",
+      "question": "How many days of casual leave am I entitled to as a software engineer at a private company?",
+      "language": "en",
+      "type": "out_of_scope",
+      "expect_abstain": true,
+      "note": "Employment/HR policy, not covered by the indexed Acts."
+    }
+  ]
+}

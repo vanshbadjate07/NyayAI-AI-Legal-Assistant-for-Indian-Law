@@ -1,0 +1,92 @@
+{
+  "embedding_model": "BAAI/bge-m3",
+  "collection": "nyayai_legal_kb",
+  "chunk_size": 900,
+  "chunk_overlap": 180,
+  "files": [
+    {
+      "file": "rti_act_2005_en.pdf",
+      "vertical": "rti",
+      "act": "The Right to Information Act, 2005",
+      "chunks": 134,
+      "text_source": "pdf_text_layer",
+      "section_labelled_pct": 98,
+      "avg_chars": 637
+    },
+    {
+      "file": "rti_act_2005_hi.pdf",
+      "vertical": "rti",
+      "act": "सूचना का अधिकार अधिनियम, 2005 (RTI Act, Hindi)",
+      "chunks": 97,
+      "text_source": "ocr",
+      "section_labelled_pct": 98,
+      "avg_chars": 794
+    },
+    {
+      "file": "mh_rent_control_1999.pdf",
+      "vertical": "tenancy",
+      "act": "The Maharashtra Rent Control Act, 1999",
+      "chunks": 219,
+      "text_source": "ocr",
+      "section_labelled_pct": 99,
+      "avg_chars": 704
+    },
+    {
+      "file": "model_tenancy_act_2021.pdf",
+      "vertical": "tenancy",
+      "act": "The Model Tenancy Act, 2021",
+      "chunks": 109,
+      "text_source": "pdf_text_layer",
+      "section_labelled_pct": 99,
+      "avg_chars": 588
+    },
+    {
+      "file": "cpa_2019.pdf",
+      "vertical": "consumer",
+      "act": "The Consumer Protection Act, 2019",
+      "chunks": 238,
+      "text_source": "pdf_text_layer",
+      "section_labelled_pct": 81,
+      "avg_chars": 637
+    },
+    {
+      "file": "dv_act_2005.pdf",
+      "vertical": "family",
+      "act": "The Protection of Women from Domestic Violence Act, 2005",
+      "chunks": 74,
+      "text_source": "pdf_text_layer",
+      "section_labelled_pct": 98,
+      "avg_chars": 566
+    },
+    {
+      "file": "hindu_marriage_act_1955.pdf",
+      "vertical": "family",
+      "act": "The Hindu Marriage Act, 1955",
+      "chunks": 94,
+      "text_source": "pdf_text_layer",
+      "section_labelled_pct": 98,
+      "avg_chars": 540
+    },
+    {
+      "file": "bns_2023.pdf",
+      "vertical": "criminal",
+      "act": "The Bharatiya Nyaya Sanhita, 2023",
+      "chunks": 808,
+      "text_source": "pdf_text_layer",
+      "section_labelled_pct": 99,
+      "avg_chars": 588
+    },
+    {
+      "file": "bnss_2023.pdf",
+      "vertical": "criminal",
+      "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "chunks": 1475,
+      "text_source": "pdf_text_layer",
+      "section_labelled_pct": 99,
+      "avg_chars": 696
+    }
+  ],
+  "total_chunks": 3248,
+  "build_seconds": 877.7,
+  "built_at": "2026-11-15 14:59:42"
+}

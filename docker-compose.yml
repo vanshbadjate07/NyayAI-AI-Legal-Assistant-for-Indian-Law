@@ -1,0 +1,59 @@
+# NyayAI — backend + Ollama.
+#
+# Prerequisites, in order:
+#   1. python ingestion/validate_kb.py     # confirm the source PDFs are readable
+#   2. python ingestion/ocr_fallback.py    # one-off OCR for the two scanned files
+#   3. python ingestion/ingest.py          # build ingestion/chroma_store (mounted below)
+#   4. docker compose up --build
+#   5. docker exec nyayai_ollama ollama pull qwen2.5:3b
+#      docker exec nyayai_ollama ollama pull qwen3-vl:2b-instruct
+#
+# The frontend is not containerised: it is a static Vite build
+# (`cd nyayai-frontend && npm run build`) served by any static host.
+#
+# Note on the embedding model: the API loads BAAI/bge-m3 (~2.2GB) into the
+# container at first query, so give Docker at least 6GB of RAM.
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: nyayai_ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: nyayai_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - LLM_MODEL=qwen2.5:3b
+      - VISION_MODEL=qwen3-vl:2b-instruct
+      - EMBED_MODEL=BAAI/bge-m3
+      - CHROMA_DIR=/app/chroma_store
+      - CHROMA_COLLECTION=nyayai_legal_kb
+      - DB_URL=sqlite:////app/app/db/nyayai.db
+      - FETCH_K=15
+      - TOP_K=5
+      - MIN_SIMILARITY=0.45
+      - FALLBACK_SIMILARITY=0.55
+    volumes:
+      # Built on the host by ingestion/ingest.py — read-only here.
+      - ./ingestion/chroma_store:/app/chroma_store:ro
+      # Cache the embedding model so it is downloaded once, not per rebuild.
+      - hf_cache:/root/.cache/huggingface
+      - nyayai_db:/app/app/db
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
+  nyayai_db:
+  hf_cache:
